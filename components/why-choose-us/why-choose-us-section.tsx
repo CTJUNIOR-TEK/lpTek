@@ -31,7 +31,7 @@ function FeatureCard({ title, description, icon, delay }: FeatureCardProps) {
 
 export function WhyChooseUsSection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary/5">
+    <section id="por-que-nos-escolher" className="w-full py-12 md:py-24 lg:py-32 bg-secondary/5">
       <div className="container px-4 md:px-6">
         <SectionHeader
           badge="Por que nos escolher"

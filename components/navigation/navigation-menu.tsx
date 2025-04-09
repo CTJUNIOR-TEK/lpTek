@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 
@@ -7,9 +9,11 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
+  { label: "Início", href: "#inicio" },
   { label: "Serviços", href: "#servicos" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "Sobre nós", href: "#sobre" },
+  { label: "Por que nos escolher", href: "#por-que-nos-escolher" },
+  { label: "Estatísticas", href: "#estatisticas" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contato", href: "#contato" },
 ]
 
@@ -28,9 +32,23 @@ interface NavigationLinkProps {
 }
 
 function NavigationLink({ item }: NavigationLinkProps) {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const targetId = item.href.substring(1)
+    const targetElement = document.getElementById(targetId)
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
   return (
     <Link
       href={item.href}
+      onClick={handleClick}
       className={cn(
         "text-sm font-medium transition-colors",
         "hover:text-secondary focus:text-secondary",

@@ -20,7 +20,7 @@ const statsData = [
  */
 export function StatsSection() {
   return (
-    <section className="relative w-full py-16 md:py-24 overflow-hidden bg-black">
+    <section id="estatisticas" className="relative w-full py-16 md:py-24 overflow-hidden bg-black">
       {/* Fundo com imagem genérica de tecnologia e overlay verde */}
       <div className="absolute inset-0 z-0">
         {/* Imagem de fundo com efeito de blur */}

@@ -1,9 +1,22 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/theme/mode-toggle"
 import { NavigationMenu } from "@/components/navigation/navigation-menu"
+import { MobileMenu } from "@/components/navigation/mobile-menu"
 
 export function Header() {
+  const handleQuoteClick = () => {
+    const targetElement = document.getElementById('contato')
+    if (targetElement) {
+      targetElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
   return (
     <header className="fixed top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
@@ -29,10 +42,13 @@ export function Header() {
         <NavigationMenu />
         <div className="flex items-center gap-4">
           <ModeToggle />
-          <Button className="hidden md:inline-flex bg-secondary hover:bg-secondary/90 text-white">
+          <Button 
+            className="hidden md:inline-flex bg-secondary hover:bg-secondary/90 text-white"
+            onClick={handleQuoteClick}
+          >
             Solicitar orçamento
           </Button>
-          <MobileMenuToggle />
+          <MobileMenu />
         </div>
       </div>
     </header>
