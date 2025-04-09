@@ -7,6 +7,7 @@ import { WhatsAppButton } from "@/components/whatsapp/whatsapp-button"
 import { FaqSection } from "@/components/faq/faq-section"
 import { faqData } from "@/components/faq/faq-data"
 import { WhyChooseUsSection } from "@/components/why-choose-us/why-choose-us-section"
+import { StatsSection } from "@/components/stats/stats-section"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <AuroraHero />
         <ServicesSection />
         <WhyChooseUsSection />
+        <StatsSection />
         <FaqSection {...faqData} />
         <ContactSection />
       </main>
