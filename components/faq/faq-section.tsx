@@ -37,7 +37,7 @@ export function FaqSection({
               <div className="inline-block rounded-lg bg-secondary/20 px-3 py-1 text-sm text-secondary font-medium mb-4 mx-auto">
                 Perguntas Frequentes
               </div>
-              <h2 className="mb-3 text-3xl font-semibold md:mb-4 lg:mb-6 lg:text-4xl">{heading}</h2>
+              <h2 className="mb-3 text-3xl font-semibold md:mb-4 lg:mb-6 lg:text-4xl text-foreground">{heading}</h2>
               <p className="text-muted-foreground lg:text-lg">{description}</p>
             </div>
             <div className="mx-auto w-full lg:max-w-3xl bg-background/90 backdrop-blur-sm rounded-xl p-4 md:p-6">
@@ -45,7 +45,7 @@ export function FaqSection({
                 {items.map((item) => (
                   <AccordionItem key={item.id} value={item.id} className="border-b border-border/50 last:border-0">
                     <AccordionTrigger className="transition-opacity duration-200 hover:no-underline hover:opacity-60 py-4">
-                      <div className="font-medium text-left">{item.question}</div>
+                      <div className="font-medium text-left text-foreground">{item.question}</div>
                     </AccordionTrigger>
                     <AccordionContent className="pb-4">
                       <div className="text-muted-foreground">{item.answer}</div>
@@ -69,8 +69,8 @@ export function FaqSection({
                   <AvatarFallback className="bg-secondary/10 text-secondary">CT</AvatarFallback>
                 </Avatar>
               </div>
-              <h3 className="mb-2 max-w-3xl font-semibold lg:text-lg text-white">{supportHeading}</h3>
-              <p className="mb-8 max-w-3xl text-muted-foreground lg:text-lg text-muted/70">{supportDescription}</p>
+              <h3 className="mb-2 max-w-3xl font-semibold lg:text-lg text-foreground">{supportHeading}</h3>
+              <p className="mb-8 max-w-3xl text-muted-foreground lg:text-lg">{supportDescription}</p>
               <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white sm:w-auto" asChild>
                   <a href={supportButtonUrl}>{supportButtonText}</a>

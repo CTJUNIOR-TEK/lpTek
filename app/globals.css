@@ -51,14 +51,15 @@
     --primary: 25 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    /* Verde CT Junior no tema escuro */
-    --secondary: 182 100% 12%;
+    /* Verde CT Junior no tema escuro - Ajustado para ser mais brilhante e claro */
+    --secondary: 182 100% 18%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 15%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 182 100% 12%;
+    /* Verde CT Junior no tema escuro - Ajustado para ser mais brilhante e claro */
+    --accent: 182 100% 18%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
