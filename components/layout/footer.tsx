@@ -11,16 +11,23 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           <div className="relative">
             <div className="flex items-center gap-2 mb-4">
+              {/* Logo para o modo claro */}
               <Image
-                src="/placeholder.svg?height=40&width=40"
-                alt="CT Junior Logo"
-                width={40}
-                height={40}
-                className="rounded"
+                src="/logo-preta-completa.png"
+                alt="CT Junior Logo - Claro"
+                width={180}
+                height={128}
+                className="rounded block dark:hidden"
               />
-              <h2 className="text-2xl font-bold tracking-tight">
-                CT <span className="text-primary">Junior</span>
-              </h2>
+
+              {/* Logo para o modo escuro */}
+              <Image
+                src="/logo-branca-completa.png"
+                alt="CT Junior Logo - Escuro"
+                width={180}
+                height={128}
+                className="rounded hidden dark:block"
+              />
             </div>
             <p className="mb-6 text-muted-foreground">
               Empresa Júnior de Engenharia da Computação da UFES, desenvolvendo soluções tecnológicas personalizadas
@@ -74,7 +81,7 @@ export function Footer() {
                       className="rounded-full border-primary/20 hover:bg-primary/10 hover:text-primary"
                       asChild
                     >
-                      <a href="https://instagram.com/ctjunior" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.instagram.com/ctjuniorufes/" target="_blank" rel="noopener noreferrer">
                         <Instagram className="h-4 w-4" />
                         <span className="sr-only">Instagram</span>
                       </a>
@@ -94,7 +101,7 @@ export function Footer() {
                       className="rounded-full border-primary/20 hover:bg-primary/10 hover:text-primary"
                       asChild
                     >
-                      <a href="https://linkedin.com/company/ctjunior" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.linkedin.com/company/ct-junior/" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="h-4 w-4" />
                         <span className="sr-only">LinkedIn</span>
                       </a>

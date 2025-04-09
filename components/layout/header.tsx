@@ -8,16 +8,23 @@ export function Header() {
     <header className="fixed top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
+          {/* Logo para o modo claro */}
           <Image
-            src="/placeholder.svg?height=32&width=32"
-            alt="CT Junior Logo"
-            width={32}
+            src="/logo-preta-reta-noSlogan.svg"
+            alt="CT Junior Logo - Claro"
+            width={128}
             height={32}
-            className="rounded"
+            className="rounded block dark:hidden"
           />
-          <span className="text-xl font-bold">
-            CT <span className="text-primary">Junior</span>
-          </span>
+
+          {/* Logo para o modo escuro */}
+          <Image
+            src="/logo-branca-reta-noSlogan.svg"
+            alt="CT Junior Logo - Escuro"
+            width={128}
+            height={32}
+            className="rounded hidden dark:block"
+          />
         </div>
         <NavigationMenu />
         <div className="flex items-center gap-4">
