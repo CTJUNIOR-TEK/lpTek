@@ -87,11 +87,12 @@ export function WhatsAppButton() {
             <div className="flex items-center gap-3">
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=48&width=48"
+                  // src="/placeholder.svg?height=48&width=48"
+                  src="/avatar/avatar_preto.png"
                   alt="CT Junior Logo"
                   width={48}
                   height={48}
-                  className="rounded-full border-2 border-white"
+                  className="rounded-full border-2 border-white bg-white"
                 />
                 <div className="absolute bottom-0 right-0 h-3 w-3 rounded-full bg-green-400 border-2 border-[#075E54]"></div>
               </div>

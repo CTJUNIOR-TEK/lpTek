@@ -115,18 +115,10 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-center border-t pt-8 text-center md:flex-row">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} CT Junior. Todos os direitos reservados.
           </p>
-          <nav className="flex gap-4 text-sm">
-            <a href="#" className="transition-colors hover:text-primary">
-              Política de Privacidade
-            </a>
-            <a href="#" className="transition-colors hover:text-primary">
-              Termos de Serviço
-            </a>
-          </nav>
         </div>
       </div>
     </footer>

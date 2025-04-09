@@ -32,7 +32,7 @@ export function FaqSection({
     <section id="faq" className="w-full relative">
       <div className="w-full h-full">
         <AuroraBackground className="w-full h-full">
-          <div className="container py-12 md:py-24 lg:py-32 space-y-16">
+          <div className="container py-12 md:py-24 lg:pt-24 lg:-mb-64 z-10 space-y-16">
             <div className="mx-auto flex max-w-3xl flex-col text-left md:text-center">
               <div className="inline-block rounded-lg bg-secondary/20 px-3 py-1 text-sm text-secondary font-medium mb-4 mx-auto">
                 Perguntas Frequentes
@@ -57,20 +57,20 @@ export function FaqSection({
             <div className="mx-auto flex max-w-4xl flex-col items-center rounded-lg bg-accent backdrop-blur-sm p-4 text-center md:rounded-xl md:p-6 lg:p-8 border border-secondary/20">
               <div className="relative mb-8">
                 <Avatar className="absolute mb-4 size-16 origin-bottom -translate-x-[60%] scale-[80%] border border-secondary/30 md:mb-5">
-                  <AvatarImage src="/placeholder.svg?height=64&width=64" />
+                  <AvatarImage src="/avatar/avatar_verde.png" />
                   <AvatarFallback className="bg-secondary/10 text-secondary">CT</AvatarFallback>
                 </Avatar>
                 <Avatar className="absolute mb-4 size-16 origin-bottom translate-x-[60%] scale-[80%] border border-secondary/30 md:mb-5">
-                  <AvatarImage src="/placeholder.svg?height=64&width=64" />
+                  <AvatarImage src="/avatar/avatar_preto.png" />
                   <AvatarFallback className="bg-secondary/10 text-secondary">JR</AvatarFallback>
                 </Avatar>
                 <Avatar className="mb-4 size-16 border border-secondary/30 md:mb-5">
-                  <AvatarImage src="/placeholder.svg?height=64&width=64" />
+                  <AvatarImage src="/avatar/avatar_branco.png" />
                   <AvatarFallback className="bg-secondary/10 text-secondary">CT</AvatarFallback>
                 </Avatar>
               </div>
-              <h3 className="mb-2 max-w-3xl font-semibold lg:text-lg text-foreground">{supportHeading}</h3>
-              <p className="mb-8 max-w-3xl text-muted-foreground lg:text-lg">{supportDescription}</p>
+              <h3 className="mb-2 max-w-3xl font-semibold lg:text-lg text-white">{supportHeading}</h3>
+              <p className="mb-8 max-w-3xl text-gray-400 dark:text-muted-foreground lg:text-lg">{supportDescription}</p>
               <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white sm:w-auto" asChild>
                   <a href={supportButtonUrl}>{supportButtonText}</a>
