@@ -4,7 +4,7 @@ import type React from "react"
 
 import { motion } from "framer-motion"
 import { SectionHeader } from "@/components/ui/section-header"
-import { PersonalizationIcon, CostBenefitIcon, InnovationIcon } from "@/components/why-choose-us/animated-icons"
+import { CpuIcon, DollarIcon, UserCheckIcon } from "@/components/why-choose-us/animated-icons"
 
 interface FeatureCardProps {
   title: string
@@ -46,19 +46,19 @@ export function WhyChooseUsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
           <FeatureCard
-            icon={<PersonalizationIcon />}
+            icon={<UserCheckIcon />}
             title="Personalização"
-            description="Desenvolvemos soluções sob medida para atender às necessidades específicas do seu negócio, garantindo que cada projeto seja único e alinhado aos seus objetivos."
+            description="Somente iniciamos a execução dos projetos depois da aprovação de nossos protótipos/mockups, modificando o que cliente desejar enquanto não é aprovada. Nosso papel é entregar exatamente o que você busca."
             delay={0}
           />
           <FeatureCard
-            icon={<CostBenefitIcon />}
+            icon={<DollarIcon />}
             title="Custo-benefício"
-            description="Oferecemos soluções de alta qualidade a preços acessíveis, permitindo que empresas de todos os portes tenham acesso a tecnologias inovadoras sem comprometer o orçamento."
+            description="Nossas soluções são até 30% mais baratas do que o mercado geral de engenharia de software. Quanto maior o projeto, maior o custo benefício e satisfação final."
             delay={1}
           />
           <FeatureCard
-            icon={<InnovationIcon />}
+            icon={<CpuIcon />}
             title="Inovação Tecnológica"
             description="Utilizamos as tecnologias mais recentes e melhores práticas do mercado para desenvolver soluções modernas, escaláveis e preparadas para o futuro."
             delay={2}
