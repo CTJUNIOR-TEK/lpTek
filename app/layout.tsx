@@ -7,9 +7,11 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CT Junior - Soluções Digitais",
+  title: "CT Junior",
   description: "Empresa júnior especializada em desenvolvimento de software sob demanda",
-    generator: 'v0.dev'
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
