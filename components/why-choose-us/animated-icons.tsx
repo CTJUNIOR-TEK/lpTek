@@ -51,7 +51,7 @@ export function CpuIcon() {
         cy="50"
         r="45"
         variants={draw}
-        custom={7.5}
+        custom={3.5}
       />
     </motion.svg>
   )
@@ -94,7 +94,7 @@ export function DollarIcon() {
         cy="50"
         r="45"
         variants={draw}
-        custom={1.5}
+        custom={3.5}
       />
     </motion.svg>
   )
@@ -123,7 +123,7 @@ export function UserCheckIcon() {
         custom={0}
       />
       {/* Cabeça do usuário (desceu um pouco) */}
-      <motion.circle cx="50" cy="42" r="10" variants={draw} custom={1} />
+      <motion.circle cx="50" cy="42" r="10" variants={draw} custom={3.5} />
 
       {/* Check lateral */}
       <motion.polyline points="68,45 72,49 80,41" variants={draw} custom={2} />
