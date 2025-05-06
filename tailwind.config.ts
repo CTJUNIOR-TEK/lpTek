@@ -33,14 +33,12 @@ function addVariablesForColors(config: any) {
   }
 }
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-    "*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./site-1/**/*.{js,ts,jsx,tsx,mdx}",
+    "./site-2/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
   theme: {
@@ -126,6 +124,9 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         aurora: "aurora 60s linear infinite",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+      },
     },
   },
   plugins: [
@@ -161,6 +162,6 @@ const config = {
       })
     },
   ],
-} satisfies Config
+}
 
 export default config
