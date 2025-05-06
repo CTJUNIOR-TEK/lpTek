@@ -27,7 +27,7 @@ export default function Site1Home() {
           ctaHref="#contato"
         />
         <SharedServicesSection
-          badge="Nossos Serviços"
+          badge="Nossos Serviços:"
           title={
             <>
               Soluções completas para o seu <span className="text-primary">negócio</span>
