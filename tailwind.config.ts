@@ -132,7 +132,7 @@ const config: Config = {
   plugins: [
     require("tailwindcss-animate"),
     ({ addBase, theme }: any) => {
-      const allColors = {}
+      const allColors: Record<string, string> = {}
       const colors = theme("colors")
 
       // Flatten the colors object

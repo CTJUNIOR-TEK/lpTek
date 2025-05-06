@@ -9,7 +9,6 @@ import { FaqSection } from "@/components/faq/faq-section"
 import { faqData } from "@/components/faq/faq-data"
 import { StatsSection } from "@/components/stats/stats-section"
 import { servicesData } from "@/components/services/services-data"
-import { whyChooseUsData } from "../dados/why-choose-us-data"
 
 export default function Site1Home() {
   return (

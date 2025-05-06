@@ -2,7 +2,18 @@ import { Code, Globe, Smartphone, Database, Lightbulb, LifeBuoy } from "lucide-r
 
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid"
 
-const services = [
+type Service = {
+  Icon: any
+  name: string
+  description: string
+  href: string
+  cta: string
+  background: React.ReactNode
+  className: string
+  variant: "primary" | "secondary"
+}
+
+const services: Service[] = [
   {
     Icon: Globe,
     name: "Websites",

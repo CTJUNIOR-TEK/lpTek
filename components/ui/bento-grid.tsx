@@ -31,7 +31,7 @@ const BentoCard = ({
   description: string
   href: string
   cta: string
-  variant?: "primary" | "secondary"
+  variant: "primary" | "secondary"
 }) => (
   <div
     key={name}
