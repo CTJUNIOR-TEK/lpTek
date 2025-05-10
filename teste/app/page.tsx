@@ -12,6 +12,7 @@ import { faqData } from "@/components/faq/faq-data"
 import { WhyChooseUsSection } from "@/components/why-choose-us/why-choose-us-section"
 import { WhyProductSection } from "@/components/why-product/why-product-section"
 import { StatsSection } from "@/components/stats/stats-section"
+import { WhatsAppCTA } from "@/components/whatsapp/whatsapp-cta"
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           secondaryCtaHref="https://www.ctjunior.com.br/"
         />
         <WhyProductSection />
+        <WhatsAppCTA />
         {/* <ServicesSection /> */}
         <WhyChooseUsSection />
         <StepsSection />
