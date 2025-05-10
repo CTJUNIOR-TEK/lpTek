@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 import type React from "react"
 
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 interface HeroContentProps {
@@ -10,9 +10,11 @@ interface HeroContentProps {
   subtitle: string
   ctaText: string
   ctaHref: string
+  secondaryCtaText?: string
+  secondaryCtaHref?: string
 }
 
-export function HeroContent({ title, subtitle, ctaText, ctaHref }: HeroContentProps) {
+export function HeroContent({ title, subtitle, ctaText, ctaHref, secondaryCtaText, secondaryCtaHref }: HeroContentProps) {
   return (
     <motion.div
       initial={{ opacity: 0.0, y: 40 }}
@@ -38,6 +40,18 @@ export function HeroContent({ title, subtitle, ctaText, ctaHref }: HeroContentPr
           <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
         </a>
       </Button>
+    
+      {/* CTA secundária (visível só se for passada) */}
+      {(secondaryCtaText && secondaryCtaHref) && (
+        <a
+        target="_blank"
+          href={secondaryCtaHref}
+          className="inline-flex items-center justify-center text-primary hover:text-primary/80 text-sm md:text-base"
+        >
+          {secondaryCtaText}
+          <ExternalLink className="ml-1.5 h-4 w-4" />
+        </a>
+      )}
     </motion.div>
   )
 }

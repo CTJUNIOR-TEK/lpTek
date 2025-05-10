@@ -204,7 +204,7 @@ export function ContactForm() {
       <div className="flex justify-center mt-8">
         <Button
           type="submit"
-          className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 text-lg rounded-full"
+          className="bg-primary hover:bg-secondary/90 text-white px-8 py-6 text-lg rounded-full"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Enviando..." : "Enviar"}

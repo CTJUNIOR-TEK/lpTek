@@ -10,6 +10,7 @@ import { WhatsAppButton } from "@/components/whatsapp/whatsapp-button"
 import { FaqSection } from "@/components/faq/faq-section"
 import { faqData } from "@/components/faq/faq-data"
 import { WhyChooseUsSection } from "@/components/why-choose-us/why-choose-us-section"
+import { WhyProductSection } from "@/components/why-product/why-product-section"
 import { StatsSection } from "@/components/stats/stats-section"
 
 export default function Home() {
@@ -22,10 +23,13 @@ export default function Home() {
           subtitle="Automatize processos, centralize dados e escale seu negócio com eficiência."
           ctaText="Solicitar orçamento"
           ctaHref="#contato"
+          secondaryCtaText="Conheça a CT Junior"
+          secondaryCtaHref="https://www.ctjunior.com.br/"
         />
-        <ServicesSection />
-        <StepsSection />
+        <WhyProductSection />
+        {/* <ServicesSection /> */}
         <WhyChooseUsSection />
+        <StepsSection />
         <StatsSection />
         <FaqSection {...faqData} />
         <ContactSection />

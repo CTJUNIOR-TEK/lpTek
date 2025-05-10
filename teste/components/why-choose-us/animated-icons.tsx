@@ -31,7 +31,7 @@ export function CpuIcon() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="text-secondary"
+      className="text-primary"
     >
       {/* Ícone feather-cpu fiel, reposicionado no centro do viewBox */}
       <motion.rect x="30" y="30" width="40" height="40" rx="5" ry="5" variants={draw} custom={0} />
@@ -71,7 +71,7 @@ export function DollarIcon() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="text-secondary"
+      className="text-primary"
     >
       {/* Ícone original reposicionado e reescalado proporcionalmente */}
       <motion.line
@@ -114,7 +114,7 @@ export function UserCheckIcon() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="text-secondary"
+      className="text-primary"
     >
       {/* Corpo do usuário (subiu para ficar mais próximo da cabeça) */}
       <motion.path
@@ -154,7 +154,7 @@ export function PersonalizationIcon() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="text-secondary"
+      className="text-primary"
     >
       {/* Gear icon with customization elements */}
       <motion.circle cx="40" cy="40" r="20" variants={draw} custom={0} />
@@ -183,7 +183,7 @@ export function CostBenefitIcon() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="text-secondary"
+      className="text-primary"
     >
       {/* Money/value icon */}
       <motion.circle cx="40" cy="40" r="30" variants={draw} custom={0} />
@@ -211,7 +211,7 @@ export function InnovationIcon() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="text-secondary"
+      className="text-primary"
     >
       {/* Innovation/technology icon */}
       <motion.path d="M40 15v10M40 55v10M15 40h10M55 40h10" variants={draw} custom={0} />
@@ -236,7 +236,7 @@ export function GitHubIcon() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="text-secondary"
+      className="text-primary"
     >
       {/* Círculo externo com bom padding */}
       <motion.circle

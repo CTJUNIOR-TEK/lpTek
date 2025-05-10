@@ -43,7 +43,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           <ModeToggle />
           <Button 
-            className="hidden md:inline-flex bg-secondary hover:bg-secondary/90 text-white"
+            className="hidden md:inline-flex bg-primary hover:bg-secondary/90 text-white"
             onClick={handleQuoteClick}
           >
             Solicitar orçamento

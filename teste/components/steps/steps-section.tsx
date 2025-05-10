@@ -114,6 +114,7 @@ export function StepsSection() {
       <div className="container px-4 md:px-6">
         <SectionHeader
           badge="Nossas Etapas"
+          badgeColor="primary"
           title={
             <>
               Como transformamos sua <span className="text-primary">ideia</span> em realidade
@@ -131,7 +132,7 @@ export function StepsSection() {
             </div>
 
             {/* Cards de etapas à direita */}
-            <div ref={stepsContainerRef} className="flex-1 flex flex-col space-y-24 md:space-y-32">
+            <div ref={stepsContainerRef} className="flex-1 flex flex-col space-y-8 md:space-y-28">
               {stepsData.map((step, index) => (
                 <div 
                   key={step.id} 

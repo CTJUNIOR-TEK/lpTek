@@ -3,13 +3,13 @@ import { ContactForm } from "@/components/contact/contact-form"
 
 export function ContactSection() {
   return (
-    <section id="contato" className="w-full py-12 md:py-24 lg:pb-32 lg:pt-60 bg-muted/50">
+    <section id="contato" className="w-full py-12 md:py-24 lg:pb-32 bg-accent/20">
       <div className="container px-4 md:px-6">
         <SectionHeader
           badge="Contato"
           title={
             <>
-              Vamos conversar sobre seu <span className="text-secondary">projeto</span>?
+              Vamos conversar sobre seu <span className="text-primary">projeto</span>?
             </>
           }
           description="Preencha o formulário abaixo e nosso time entrará em contato o mais rápido possível."

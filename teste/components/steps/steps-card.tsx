@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Lightbulb, Code, Layout, TestTube, Rocket, ArrowRight } from "lucide-react"
+import { Lightbulb, FileSearch, LayoutDashboard, Database, Rocket, Code2, Bug } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Modal } from "@/components/ui/modal"
@@ -11,9 +11,11 @@ import type { ReactNode, CSSProperties } from "react"
  */
 const iconMap = {
   Lightbulb,
-  Code,
-  Layout,
-  TestTube,
+  FileSearch,
+  LayoutDashboard,
+  Database,
+  Code2,
+  Bug,
   Rocket,
 }
 
@@ -48,9 +50,6 @@ export function StepCard({
   isCompleted = false,
   style,
 }: StepCardProps) {
-  // Estado para controlar a visibilidade do modal de detalhes
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
   // Busca detalhes adicionais da etapa
   const stepDetail = stepsDetails[id]
 
@@ -62,7 +61,7 @@ export function StepCard({
       {/* Card principal */}
       <div
         className={cn(
-          "group relative flex flex-col justify-between overflow-hidden rounded-xl h-full transition-all duration-500",
+          "group relative flex flex-col justify-between overflow-hidden rounded-xl h-full transform-gpu transition-all duration-500 hover:shadow-lg hover:scale-105",
           // Estilos para tema claro
           "bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
           // Estilos para tema escuro
@@ -121,10 +120,10 @@ export function StepCard({
         </div>
 
         {/* Conteúdo do card */}
-        <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 pl-20 transition-all duration-300 group-hover:-translate-y-10">
+        <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 pl-20 transition-all duration-300">
           <Icon
             className={cn(
-              "h-12 w-12 origin-left transform-gpu transition-all duration-300 ease-in-out group-hover:scale-75",
+              "h-12 w-12 origin-left transform-gpu transition-all duration-300 ease-in-out",
               variant === "primary" ? "text-primary" : "text-secondary",
             )}
           />
@@ -132,43 +131,9 @@ export function StepCard({
           <p className="max-w-lg text-neutral-400">{description}</p>
         </div>
 
-        {/* Botão de ação */}
-        <div
-          className={cn(
-            "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
-          )}
-        >
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setIsModalOpen(true)}
-            className={cn(
-              "pointer-events-auto",
-              variant === "primary" ? "text-primary hover:text-primary/90" : "text-secondary hover:text-secondary/90",
-            )}
-          >
-            Ver mais
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
-
         {/* Overlay de hover */}
         <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
       </div>
-
-      {/* Modal de detalhes da etapa */}
-      {stepDetail && (
-        <Modal
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
-          title={stepDetail.title}
-          subtitle={stepDetail.subtitle}
-          description={stepDetail.description}
-          benefits={stepDetail.benefits}
-          ctaText="Solicitar Orçamento"
-          ctaHref="#contato"
-        />
-      )}
     </>
   )
 }
