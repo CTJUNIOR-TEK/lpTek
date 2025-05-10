@@ -6,9 +6,11 @@ interface SharedHeroProps {
   subtitle: string
   ctaText: string
   ctaHref: string
+  secondaryCtaText?: string
+  secondaryCtaHref?: string
 }
 
-export function SharedHero({ title, subtitle, ctaText, ctaHref }: SharedHeroProps) {
+export function SharedHero({ title, subtitle, ctaText, ctaHref, secondaryCtaText, secondaryCtaHref }: SharedHeroProps) {
   return (
     <section id="inicio">
       <AuroraBackground isHero={true}>
@@ -17,6 +19,8 @@ export function SharedHero({ title, subtitle, ctaText, ctaHref }: SharedHeroProp
           subtitle={subtitle}
           ctaText={ctaText}
           ctaHref={ctaHref}
+          secondaryCtaText={secondaryCtaText}
+          secondaryCtaHref={secondaryCtaHref}
         />
       </AuroraBackground>
     </section>

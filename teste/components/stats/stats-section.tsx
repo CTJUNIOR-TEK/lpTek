@@ -22,15 +22,15 @@ export function StatsSection() {
   return (
     <section id="estatisticas" className="relative w-full py-16 md:py-24 overflow-hidden bg-black">
       {/* Fundo com imagem genérica de tecnologia e overlay verde */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 filter brightness-50">
         {/* Imagem de fundo com efeito de blur */}
         <img
           src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Tecnologia"
-          className="w-full h-full object-cover opacity-50 filter"
+          className="w-full h-full object-cover opacity-30 filter"
         />
         {/* Overlay verde semi-transparente */}
-        <div className="absolute inset-0 bg-secondary/40" />
+        <div className="absolute inset-0 bg-secondary/40"/>
       </div>
 
       {/* Conteúdo da seção */}

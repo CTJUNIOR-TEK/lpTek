@@ -77,18 +77,6 @@ export function ContactForm() {
       newErrors.email = "Email inválido"
     }
 
-    if (!formData.source) {
-      newErrors.source = "Por favor, selecione como nos conheceu"
-    }
-
-    if (!formData.budget) {
-      newErrors.budget = "Por favor, selecione um orçamento"
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Por favor, conte-nos sobre sua ideia"
-    }
-
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
@@ -172,7 +160,7 @@ export function ContactForm() {
 
         <div className="space-y-2">
           <Label htmlFor="source">
-            Como conheceu a empresa<span className="text-red-500 ml-1">*</span>
+            Como conheceu a empresa
           </Label>
           <Select
             id="source"
@@ -186,7 +174,7 @@ export function ContactForm() {
 
         <div className="space-y-2 md:col-span-2">
           <Label htmlFor="budget">
-            Quanto pretende investir no projeto<span className="text-red-500 ml-1">*</span>
+            Quanto pretende investir no projeto
           </Label>
           <Select
             id="budget"
@@ -200,7 +188,7 @@ export function ContactForm() {
 
         <div className="space-y-2 md:col-span-2">
           <Label htmlFor="message">
-            Conte-nos sobre sua ideia<span className="text-red-500 ml-1">*</span>
+            Conte-nos sobre sua ideia
           </Label>
           <Textarea
             id="message"
@@ -216,7 +204,7 @@ export function ContactForm() {
       <div className="flex justify-center mt-8">
         <Button
           type="submit"
-          className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 text-lg rounded-full"
+          className="bg-primary hover:bg-secondary/90 text-white px-8 py-6 text-lg rounded-full"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Enviando..." : "Enviar"}

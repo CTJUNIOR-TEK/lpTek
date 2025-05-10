@@ -61,13 +61,16 @@ export function Modal({ isOpen, onClose, title, subtitle, description, benefits,
     >
       <div
         className={cn(
-          "bg-background max-w-lg w-full rounded-xl shadow-xl p-6 md:p-8 relative transition-all duration-300 transform",
+          "bg-background max-w-lg w-full rounded-xl shadow-xl p-6 md:p-8 relative" +
+          "transition-all duration-300 transform sm:max-w-lg sm:p-6" +
+          "overflow-y-auto max-h-[90vh]",
           isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0",
         )}
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-1 rounded-full hover:bg-muted transition-colors"
+          className="absolute top-4 right-4 p-1 rounded-full hover:bg-muted transition-colors
+                      sm:top-4 sm:right-4"
           aria-label="Fechar"
         >
           <X className="h-5 w-5" />
@@ -101,8 +104,15 @@ export function Modal({ isOpen, onClose, title, subtitle, description, benefits,
           </div>
 
           <div className="pt-4">
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white py-6 rounded-full" asChild>
-              <a href={ctaHref}>{ctaText}</a>
+            <Button className="w-full bg-primary hover:bg-primary/90 text-white py-6 rounded-full" 
+              asChild
+            >
+              {/* fecha o modal e, em seguida, deixa o link fazer o scroll para #contato */}
+              <a href={ctaHref}
+                onClick={() => {
+                  onClose()
+                }}
+              >{ctaText}</a>
             </Button>
           </div>
         </div>

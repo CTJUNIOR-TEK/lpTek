@@ -6,7 +6,7 @@ interface SectionHeaderProps {
   description?: string
   alignment?: "left" | "center" | "right"
   className?: string
-  badgeColor?: "primary" | "secondary"
+  badgeColor: "primary" | "secondary"
 }
 
 export function SectionHeader({
@@ -15,7 +15,7 @@ export function SectionHeader({
   description,
   alignment = "center",
   className = "",
-  badgeColor = "primary",
+  badgeColor,
 }: SectionHeaderProps) {
   const alignmentClasses = {
     left: "items-start text-left",

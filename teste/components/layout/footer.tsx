@@ -62,11 +62,7 @@ export function Footer() {
               <p>Email: contato@ctjunior.com.br</p>
               <div className="flex items-center gap-2 mt-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <p>WhatsApp: (27) 99999-9999</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4 text-primary" />
-                <p>Horário: seg-sex 9h - 18h</p>
+                <p>WhatsApp: <a href="tel:+5527997767207">+55 27 99776‑7207</a></p>
               </div>
             </address>
 
