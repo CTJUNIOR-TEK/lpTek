@@ -11,9 +11,10 @@ interface FeatureCardProps {
   description: string
   icon: React.ReactNode
   delay: number
+  color: "text-primary" | "text-secondary"
 }
 
-function FeatureCard({ title, description, icon, delay }: FeatureCardProps) {
+function FeatureCard({ title, description, icon, delay, color }: FeatureCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -23,7 +24,7 @@ function FeatureCard({ title, description, icon, delay }: FeatureCardProps) {
       className="flex flex-col items-center text-center p-6 rounded-xl bg-background shadow-sm border border-secondary/20"
     >
       <div className="mb-6 h-24 w-24 flex items-center justify-center">{icon}</div>
-      <h3 className="text-xl font-semibold mb-3 text-primary">{title}</h3>
+      <h3 className={`text-xl font-semibold mb-3 ${color}`}>{title}</h3>
       <p className="text-muted-foreground">{description}</p>
     </motion.div>
   )
@@ -56,18 +57,21 @@ export function WhyChooseUsSection() {
             title="Personalização"
             description="Somente iniciamos a execução dos projetos depois da aprovação de nossos protótipos/mockups, modificando o que cliente desejar enquanto não é aprovada. Nosso papel é entregar exatamente o que você busca."
             delay={0}
+            color="text-primary"
           />
           <FeatureCard
             icon={<DollarIcon />}
             title="Custo-benefício"
             description="Nossas soluções são até 30% mais baratas do que o mercado geral de engenharia de software. Quanto maior o projeto, maior o custo benefício e satisfação final."
             delay={1}
+            color="text-secondary"
           />
           <FeatureCard
             icon={<CpuIcon />}
             title="Inovação Tecnológica"
             description="Utilizamos as tecnologias mais recentes e melhores práticas do mercado para desenvolver soluções modernas, escaláveis e preparadas para o futuro."
             delay={2}
+            color="text-primary"
           />
         </div>
 

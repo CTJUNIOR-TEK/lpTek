@@ -20,10 +20,10 @@ function addVariablesForColors(config: any) {
   flatColors["--white"] = "#ffffff"
   flatColors["--black"] = "#000000"
 
-  // Adicionar cores da CT Junior
-  flatColors["--orange-200"] = "#FFB380"
-  flatColors["--orange-300"] = "#FF9140"
-  flatColors["--orange-500"] = "#FF6A00"
+  // Adicionar cores da CT Junior - Versão menos vibrante para o laranja
+  flatColors["--orange-200"] = "#E8B78C"
+  flatColors["--orange-300"] = "#D99B66"
+  flatColors["--orange-500"] = "#C67C40"
   flatColors["--green-500"] = "#003A3D"
   flatColors["--green-400"] = "#004A4D"
   flatColors["--green-300"] = "#005A5D"
@@ -33,12 +33,14 @@ function addVariablesForColors(config: any) {
   }
 }
 
-const config: Config = {
+const config = {
   darkMode: ["class"],
   content: [
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./site-1/**/*.{js,ts,jsx,tsx,mdx}",
-    "./site-2/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
   theme: {
@@ -84,11 +86,11 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Adicionar cores da CT Junior diretamente
+        // Adicionar cores da CT Junior diretamente - Versão menos vibrante para o laranja
         ctOrange: {
-          DEFAULT: "#FF6A00",
-          light: "#FF9140",
-          lighter: "#FFB380",
+          DEFAULT: "#C67C40",
+          light: "#D99B66",
+          lighter: "#E8B78C",
         },
         ctGreen: {
           DEFAULT: "#003A3D",
@@ -124,15 +126,12 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         aurora: "aurora 60s linear infinite",
       },
-      fontFamily: {
-        sans: ["var(--font-inter)"],
-      },
     },
   },
   plugins: [
     require("tailwindcss-animate"),
     ({ addBase, theme }: any) => {
-      const allColors: Record<string, string> = {}
+      const allColors = {}
       const colors = theme("colors")
 
       // Flatten the colors object
@@ -150,9 +149,9 @@ const config: Config = {
       allColors["--transparent"] = "transparent"
       allColors["--white"] = "#ffffff"
       allColors["--black"] = "#000000"
-      allColors["--orange-200"] = "#FFB380"
-      allColors["--orange-300"] = "#FF9140"
-      allColors["--orange-500"] = "#FF6A00"
+      allColors["--orange-200"] = "#E8B78C"
+      allColors["--orange-300"] = "#D99B66"
+      allColors["--orange-500"] = "#C67C40"
       allColors["--green-500"] = "#003A3D"
       allColors["--green-400"] = "#004A4D"
       allColors["--green-300"] = "#005A5D"
@@ -162,6 +161,6 @@ const config: Config = {
       })
     },
   ],
-}
+} satisfies Config
 
 export default config

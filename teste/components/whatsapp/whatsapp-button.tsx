@@ -41,7 +41,7 @@ export function WhatsAppButton() {
   const openWhatsApp = () => {
     // Número fictício - substitua pelo número real
     window.open(
-      "https://wa.me/5527992982893?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20tecnologia%20da%20CT%20Junior.",
+      "https://wa.me/5527997767207?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20sistema%20web%20da%20CT%20Junior.",
       "_blank",
     )
   }
