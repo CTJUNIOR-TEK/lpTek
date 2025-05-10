@@ -19,6 +19,20 @@ const iconMap = {
   Rocket,
 }
 
+// StepCard.tsx  (troque APENAS o que está dentro do <div className=...>)
+const badgeColor = {
+  primary: {
+    base: "bg-primary/10 text-primary",
+    active: "bg-primary/20 text-primary",
+    completed: "bg-primary text-primary-foreground",
+  },
+  secondary: {
+    base: "bg-secondary/10 text-secondary",
+    active: "bg-secondary/20 text-secondary",
+    completed: "bg-secondary text-secondary-foreground",
+  },
+}
+
 export interface StepCardProps {
   id: string
   title: string
@@ -78,12 +92,10 @@ export function StepCard({
             className={cn(
               "flex h-12 w-12 items-center justify-center rounded-full text-lg font-medium transition-all duration-300",
               isCompleted
-                ? "bg-primary text-primary-foreground"
-                : isActive
-                  ? "bg-primary/20 text-primary"
-                  : variant === "primary"
-                    ? "bg-primary/10 text-primary"
-                    : "bg-secondary/10 text-secondary",
+              ? badgeColor[variant].completed
+              : isActive
+                  ? badgeColor[variant].active
+                  : badgeColor[variant].base
             )}
           >
             {isCompleted ? (

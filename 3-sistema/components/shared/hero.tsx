@@ -13,7 +13,7 @@ interface SharedHeroProps {
 export function SharedHero({ title, subtitle, ctaText, ctaHref, secondaryCtaText, secondaryCtaHref }: SharedHeroProps) {
   return (
     <section id="inicio">
-      <AuroraBackground isHero={true}>
+      <AuroraBackground>
         <HeroContent
           title={title}
           subtitle={subtitle}
