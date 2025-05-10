@@ -3,34 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev:aplicativo": "next dev 1-aplicativo",
-    "build:aplicativo": "next build 1-aplicativo",
-    "start:aplicativo": "next start 1-aplicativo",
-
-    "dev:dev_prod": "next dev 2-dev_prod",
-    "build:dev_prod": "next build 2-dev_prod",
-    "start:dev_prod": "next start 2-dev_prod",
-
-    "dev:sistema": "next dev 3-sistema",
-    "build:sistema": "next build 3-sistema",
-    "start:sistema": "next start 3-sistema",
-    
-    "dev:ecommerce": "next dev 4-ecommerce",
-    "build:ecommerce": "next build 4-ecommerce",
-    "start:ecommerce": "next start 4-ecommerce",
-
-    "dev:landing_page": "next dev 5-landing_page",
-    "build:landing_page": "next build 5-landing_page",
-    "start:landing_page": "next start 5-landing_page",
-    
-    "dev:website": "next dev 6-website",
-    "build:website": "next build 6-website",
-    "start:website": "next start 6-website",
-
-    "dev:automacao": "next dev 7-automacao",
-    "build:automacao": "next build 7-automacao",
-    "start:automacao": "next start 7-automacao",
-    
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
