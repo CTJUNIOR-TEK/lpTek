@@ -9,8 +9,8 @@ export function Footer() {
     <footer className="relative border-t bg-background text-foreground transition-colors duration-300">
       <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-3">
-          <div className="relative">
-            <div className="flex items-center gap-2 mb-4">
+          <div className="relative text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
               {/* Logo para o modo claro */}
               <Image
                 src="/logo-preta-completa.png"
@@ -36,7 +36,7 @@ export function Footer() {
             <div className="absolute -right-4 top-0 h-24 w-24 rounded-full bg-primary/10 blur-2xl" />
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="mb-4 text-lg font-semibold">Visite nosso site oficial</h3>
             <p className="mb-4 text-sm text-muted-foreground">
               Conheça mais sobre nossos projetos, equipe e serviços em nosso site oficial.
@@ -53,21 +53,21 @@ export function Footer() {
             </Button>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="mb-4 text-lg font-semibold">Contato</h3>
             <address className="space-y-2 text-sm not-italic mb-6">
               <p>Universidade Federal do Espírito Santo</p>
               <p>Centro Tecnológico - CT</p>
               <p>Vitória, ES</p>
               <p>Email: contato@ctjunior.com.br</p>
-              <div className="flex items-center gap-2 mt-2">
+              <div className="flex items-center justify-center md:justify-start gap-2 mt-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <p>WhatsApp: <a href="tel:+5527997767207">+55 27 99776‑7207</a></p>
+                <p>WhatsApp: <a href="tel:+5527997767207">+55 27 99776‑7207</a></p>
               </div>
             </address>
 
             <h3 className="mb-4 text-lg font-semibold">Redes Sociais</h3>
-            <div className="flex space-x-4">
+            <div className="flex justify-center md:justify-start space-x-4">
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -111,7 +111,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-center border-t pt-8 text-center md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-center border-t pt-8 text-center">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} CT Junior. Todos os direitos reservados.
           </p>

@@ -19,6 +19,7 @@ export function SharedServicesSection({ badge, title, description, services }: S
           badge={badge}
           title={title}
           description={description}
+          badgeColor="primary"
         />
 
         <ServiceGrid className="lg:grid-rows-3 max-w-7xl mx-auto">
