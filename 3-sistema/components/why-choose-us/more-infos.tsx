@@ -15,12 +15,12 @@ export function MoreInfos() {
         {/* Avatar da esquerda */}
         <Avatar
           icon={<User className="w-6 h-6 text-secondary dark:text-white" />}
-          className="absolute size-16 bg-white dark:bg-zinc-800 origin-bottom -translate-x-[60%] scale-[80%] border border-secondary/30"
+          className="absolute size-16 bg-white dark:bg-black origin-bottom -translate-x-[60%] scale-[80%] border border-secondary/30"
         />
         {/* Avatar da direita */}
         <Avatar
           icon={<Mail className="w-6 h-6 text-secondary dark:text-white" />}
-          className="absolute size-16 bg-white dark:bg-zinc-800 origin-bottom translate-x-[60%] scale-[80%] border border-secondary/30"
+          className="absolute size-16 bg-white dark:bg-black origin-bottom translate-x-[60%] scale-[80%] border border-secondary/30"
         />
       </div>
 
@@ -35,7 +35,7 @@ export function MoreInfos() {
       </p>
       <div className="flex w-full flex-col gap-2 sm:flex-row sm:justify-center">
         <Button className="w-full bg-primary text-white hover:bg-primary/90 sm:w-auto" asChild>
-          <a href="#contato\">Fale Conosco!</a>
+          <a href="#contato">Fale Conosco!</a>
         </Button>
       </div>
     </div>

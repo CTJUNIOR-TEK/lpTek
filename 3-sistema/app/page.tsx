@@ -21,7 +21,7 @@ export default function Home() {
       <main className="flex-1">
         <SharedHero
           title= { <>Sistemas Web <span className="text-primary">Sob Medida</span></> }
-          subtitle="Automatize processos, centralize dados e escale seu negócio com eficiência."
+          subtitle="Transforme tarefas manuais em fluxos digitais, unifique suas operações e acelere o crescimento do seu negócio."
           ctaText="Solicitar orçamento"
           ctaHref="#contato"
           secondaryCtaText="Conheça a CT Junior"

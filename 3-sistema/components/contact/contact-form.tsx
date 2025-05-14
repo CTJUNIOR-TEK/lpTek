@@ -1,14 +1,14 @@
 "use client"
 
 import type React from "react"
-
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { PhoneInput } from "@/components/contact/phone-input"
+import { sendEmail, initializeEmailJS } from "./email-service"
 
 interface FormData {
   name: string
@@ -28,7 +28,32 @@ interface FormErrors {
   message?: string
 }
 
-export function ContactForm() {
+interface ContactFormProps {
+  // Cores para os elementos do formulário
+  labelColor?: string // Cor do texto dos labels
+  inputTextColor?: string // Cor do texto dos inputs
+  inputBgColor?: string // Cor de fundo dos inputs
+  inputBorderColor?: string // Cor da borda dos inputs
+  inputFocusRingColor?: string // Cor do anel de foco dos inputs
+  buttonBgColor?: string // Cor de fundo do botão
+  buttonHoverColor?: string // Cor de hover do botão
+  buttonTextColor?: string // Cor do texto do botão
+  successBgColor?: string // Cor de fundo da mensagem de sucesso
+  successTextColor?: string // Cor do texto da mensagem de sucesso
+}
+
+export function ContactForm({
+  labelColor = "text-foreground",
+  inputTextColor = "text-foreground",
+  inputBgColor = "bg-background",
+  inputBorderColor = "border-input",
+  inputFocusRingColor = "ring-secondary",
+  buttonBgColor = "bg-primary",
+  buttonHoverColor = "hover:bg-secondary/90",
+  buttonTextColor = "text-white",
+  successBgColor = "bg-secondary/10 dark:bg-secondary/20",
+  successTextColor = "text-secondary dark:text-secondary-foreground",
+}: ContactFormProps) {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     phone: "",
@@ -41,6 +66,11 @@ export function ContactForm() {
   const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
+  const [errorMessage, setErrorMessage] = useState<string>("")
+
+  useEffect(() => {
+    initializeEmailJS();
+  }, []);
 
   const sourceOptions = [
     { value: "", label: "Selecione uma opção" },
@@ -54,10 +84,10 @@ export function ContactForm() {
 
   const budgetOptions = [
     { value: "", label: "Selecione uma opção" },
-    { value: "0-5000", label: "0–5.000" },
-    { value: "5000-10000", label: "5.000–10.000" },
-    { value: "10000-20000", label: "10.000–20.000" },
-    { value: "20000+", label: "+20.000" },
+    { value: "0-5000", label: "R$0–R$5.000" },
+    { value: "5000-10000", label: "R$5.000–R$10.000" },
+    { value: "10000-20000", label: "R$10.000–R$20.000" },
+    { value: "20000+", label: "R$+20.000" },
   ]
 
   const validateForm = (): boolean => {
@@ -83,6 +113,7 @@ export function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setErrorMessage("")
 
     if (!validateForm()) {
       return
@@ -91,8 +122,16 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      // Simulando envio do formulário
-      await new Promise((resolve) => setTimeout(resolve, 1500))
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        source: formData.source,
+        budget: formData.budget,
+        message: formData.message,
+      }
+
+      await sendEmail(templateParams)
 
       // Limpar formulário após envio bem-sucedido
       setFormData({
@@ -108,6 +147,7 @@ export function ContactForm() {
       setTimeout(() => setIsSuccess(false), 5000)
     } catch (error) {
       console.error("Erro ao enviar formulário:", error)
+      setErrorMessage("Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.")
     } finally {
       setIsSubmitting(false)
     }
@@ -121,7 +161,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="space-y-2">
-          <Label htmlFor="name">
+          <Label htmlFor="name" className={labelColor}>
             Nome<span className="text-red-500 ml-1">*</span>
           </Label>
           <Input
@@ -130,7 +170,7 @@ export function ContactForm() {
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             placeholder="Seu nome completo"
             error={errors.name}
-            className="focus-visible:ring-secondary"
+            className={`${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
           />
         </div>
 
@@ -141,10 +181,15 @@ export function ContactForm() {
           onChange={handlePhoneChange}
           error={errors.phone}
           required
+          labelColor={labelColor}
+          inputTextColor={inputTextColor}
+          inputBgColor={inputBgColor}
+          inputBorderColor={inputBorderColor}
+          inputFocusRingColor={inputFocusRingColor}
         />
 
         <div className="space-y-2">
-          <Label htmlFor="email">
+          <Label htmlFor="email" className={labelColor}>
             Email<span className="text-red-500 ml-1">*</span>
           </Label>
           <Input
@@ -154,12 +199,12 @@ export function ContactForm() {
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             placeholder="seu.email@exemplo.com"
             error={errors.email}
-            className="focus-visible:ring-secondary"
+            className={`${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
           />
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="source">
+          <Label htmlFor="source" className={labelColor}>
             Como conheceu a empresa
           </Label>
           <Select
@@ -168,12 +213,12 @@ export function ContactForm() {
             value={formData.source}
             onChange={(e) => setFormData({ ...formData, source: e.target.value })}
             error={errors.source}
-            className="focus-visible:ring-secondary"
+            className={`${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
           />
         </div>
 
         <div className="space-y-2 md:col-span-2">
-          <Label htmlFor="budget">
+          <Label htmlFor="budget" className={labelColor}>
             Quanto pretende investir no projeto
           </Label>
           <Select
@@ -182,12 +227,12 @@ export function ContactForm() {
             value={formData.budget}
             onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
             error={errors.budget}
-            className="focus-visible:ring-secondary"
+            className={`${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
           />
         </div>
 
         <div className="space-y-2 md:col-span-2">
-          <Label htmlFor="message">
+          <Label htmlFor="message" className={labelColor}>
             Conte-nos sobre sua ideia
           </Label>
           <Textarea
@@ -195,7 +240,7 @@ export function ContactForm() {
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             placeholder="Descreva seu projeto, objetivos, funcionalidades desejadas e qualquer outra informação relevante para entendermos melhor sua necessidade."
-            className="min-h-[150px] focus-visible:ring-secondary"
+            className={`min-h-[150px] ${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
             error={errors.message}
           />
         </div>
@@ -212,8 +257,14 @@ export function ContactForm() {
       </div>
 
       {isSuccess && (
-        <div className="mt-4 p-4 bg-secondary/10 dark:bg-secondary/20 text-secondary dark:text-secondary-foreground rounded-md text-center">
+        <div className={`mt-4 p-4 ${successBgColor} ${successTextColor} rounded-md text-center`}>
           Mensagem enviada com sucesso! Entraremos em contato em breve.
+        </div>
+      )}
+
+      {errorMessage && (
+        <div className="mt-4 p-4 bg-red-100 dark:bg-red-900/20 text-red-600 dark:text-red-400 rounded-md text-center">
+          {errorMessage}
         </div>
       )}
     </form>

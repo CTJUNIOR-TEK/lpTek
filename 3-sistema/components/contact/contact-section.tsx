@@ -19,7 +19,18 @@ export function ContactSection() {
         </div>
 
         <div className="max-w-3xl mx-auto bg-background rounded-xl shadow-lg p-6 md:p-8 lg:p-10 border border-secondary/10">
-          <ContactForm />
+          <ContactForm 
+            labelColor="text-foreground"
+            inputTextColor="text-foreground"
+            inputBgColor="bg-background"
+            inputBorderColor="border-input"
+            inputFocusRingColor="ring-secondary"
+            buttonBgColor="bg-primary"
+            buttonHoverColor="hover:bg-secondary/90"
+            buttonTextColor="text-white"
+            successBgColor="bg-secondary/10 dark:bg-secondary/20"
+            successTextColor="text-secondary dark:text-secondary-foreground"
+          />
         </div>
       </div>
     </section>
