@@ -35,12 +35,10 @@ export function HeroContent({ title, subtitle, ctaText, ctaHref, secondaryCtaTex
         <Button
           size="lg"
           className="bg-primary hover:bg-primary/90 text-white dark:text-black rounded-full w-fit px-8 py-6 text-lg group"
-          asChild
+          href={ctaHref}
         >
-          <a href={ctaHref}>
             {ctaText}
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </a>
         </Button>
       
         {/* CTA secundária (visível só se for passada) */}

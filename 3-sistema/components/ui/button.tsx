@@ -37,16 +37,36 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean
+  href?: string
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, href, onClick, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
+
+    const handleClick: React.MouseEventHandler<HTMLElement> = (e) => {
+      // scroll para âncora interna
+      if (href && href.startsWith('#')) {
+        e.preventDefault()
+        const id = href.slice(1)
+        const target = document.getElementById(id)
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }
+      // repassa onClick customizado, se houver
+      if (onClick) {
+        onClick(e as any)
+      }
+    }
+
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
+        {...(href ? { href } : {})}
+        onClick={handleClick}
       />
     )
   }
