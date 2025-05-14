@@ -1,6 +1,5 @@
 import { AuroraBackground } from "@/components/ui/aurora-background"
 import { HeroContent } from "@/components/hero/hero-content"
-import { ContactForm } from "../contact/contact-form"
 
 interface SharedHeroProps {
   title: React.ReactNode

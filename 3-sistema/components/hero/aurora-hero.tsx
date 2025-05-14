@@ -4,7 +4,7 @@ import { HeroContent } from "@/components/hero/hero-content"
 export function AuroraHero() {
   return (
     <section id="inicio">
-      <AuroraBackground isHero={true}>
+      <AuroraBackground>
         <HeroContent
           title={
             <>
@@ -12,8 +12,8 @@ export function AuroraHero() {
             </>
           }
           subtitle="Somos uma empresa júnior especializada em desenvolvimento de software sob demanda"
-          ctaText="Solicite um Orçamento"
-          ctaHref="#contato"
+          ctaText="Veja Como Funciona"
+          ctaHref="#etapas"
         />
       </AuroraBackground>
     </section>

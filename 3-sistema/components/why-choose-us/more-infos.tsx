@@ -34,8 +34,8 @@ export function MoreInfos() {
         WhatsApp para uma consultoria personalizada.
       </p>
       <div className="flex w-full flex-col gap-2 sm:flex-row sm:justify-center">
-        <Button className="w-full bg-primary text-white hover:bg-primary/90 sm:w-auto" asChild>
-          <a href="#contato">Fale Conosco!</a>
+        <Button className="w-full bg-primary text-white hover:bg-primary/90 sm:w-auto" href="#contato">
+          Fale Conosco!
         </Button>
       </div>
     </div>
