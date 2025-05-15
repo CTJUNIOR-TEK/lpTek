@@ -4,9 +4,10 @@ interface EmailParams extends Record<string, unknown>{
   from_name: string;
   from_email: string;
   phone: string;
-  source: string;
+  source: string; // onde nos conheceu
   budget: string;
   message: string;
+  type: string; // "sistema web", "aplicativo", etc.
 }
 
 export const sendEmail = async (params: EmailParams): Promise<void> => {

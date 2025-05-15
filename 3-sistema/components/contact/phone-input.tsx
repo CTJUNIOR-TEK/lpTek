@@ -58,10 +58,14 @@ export function PhoneInput({
   const [selectedCountry, setSelectedCountry] = useState<Country>(countries[0])
   const [phoneNumber, setPhoneNumber] = useState(value)
 
+  /** Concatena prefixo e só os dígitos do telefone */
+  const buildInternational = (display: string, country: Country) =>
+    display ? `${country.dialCode} ${display}` : ""
+
   const handleCountrySelect = (country: Country) => {
     setSelectedCountry(country)
     setIsOpen(false)
-    onChange(phoneNumber, country)
+    onChange(buildInternational(phoneNumber, country), country)
   }
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -83,7 +87,8 @@ export function PhoneInput({
   }
 
     setPhoneNumber(formattedValue)
-    onChange(formattedValue, selectedCountry)
+
+    onChange(buildInternational(formattedValue, selectedCountry), selectedCountry)
   }
 
   return (
