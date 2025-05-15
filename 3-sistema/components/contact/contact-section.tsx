@@ -17,6 +17,7 @@ export function ContactSection() {
             badgeColor="primary"
           />
         </div>
+        
 
         <div className="max-w-3xl mx-auto bg-background rounded-xl shadow-lg p-6 md:p-8 lg:p-10 border border-secondary/10">
           <ContactForm 

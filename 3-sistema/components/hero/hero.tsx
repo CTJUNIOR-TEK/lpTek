@@ -1,7 +1,7 @@
 import { AuroraBackground } from "@/components/ui/aurora-background"
 import { HeroContent } from "@/components/hero/hero-content"
 
-interface SharedHeroProps {
+interface HeroProps {
   title: React.ReactNode
   subtitle: string
   ctaText: string
@@ -10,7 +10,7 @@ interface SharedHeroProps {
   secondaryCtaHref?: string
 }
 
-export function SharedHero(props: SharedHeroProps) {
+export function Hero(props: HeroProps) {
   return (
     <section id="inicio">
       <AuroraBackground>

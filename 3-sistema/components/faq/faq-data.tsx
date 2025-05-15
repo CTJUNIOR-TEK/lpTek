@@ -1,5 +1,5 @@
 export const faqData = {
-  heading: "Perguntas Frequentes",
+  heading: "Perguntas Frequentes", // ALTERAR TUDO
   description:
     "Encontre respostas para as perguntas mais comuns sobre nosso serviço. Não encontrou o que procura? Entre em contato com nossa equipe pelo formulário ou por WhatsApp.",
   items: [

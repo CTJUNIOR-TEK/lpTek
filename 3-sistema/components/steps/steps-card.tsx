@@ -1,15 +1,11 @@
-import { useState } from "react"
 import { Lightbulb, FileSearch, LayoutDashboard, Database, Rocket, Code2, Bug } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Modal } from "@/components/ui/modal"
-import { stepsDetails } from "@/components/steps/steps-details"
 import type { ReactNode, CSSProperties } from "react"
 
 /**
  * Mapeamento de nomes de ícones para componentes de ícone
  */
-const iconMap = {
+const iconMap = { // ALTERAR
   Lightbulb,
   FileSearch,
   LayoutDashboard,
@@ -64,9 +60,6 @@ export function StepCard({
   isCompleted = false,
   style,
 }: StepCardProps) {
-  // Busca detalhes adicionais da etapa
-  const stepDetail = stepsDetails[id]
-
   // Obtém o componente de ícone do mapa
   const Icon = iconMap[iconName]
 

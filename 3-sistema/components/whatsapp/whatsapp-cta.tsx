@@ -9,14 +9,9 @@ import { MessageSquare, ArrowRight } from "lucide-react"
  * Exibe uma seção chamativa incentivando o contato via WhatsApp
  */
 export function WhatsAppCTA() {
-  // Número de WhatsApp da empresa (substitua pelo número real)
-  const whatsappNumber = "5527997767207"
-
-  // Mensagem pré-definida (codificada para URL)
-  const message = encodeURIComponent("Olá! Gostaria de saber mais sobre o serviço de sistema web da CT Junior.")
 
   // URL completa do WhatsApp
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
+  const whatsappUrl = "https://wa.me/5527997767207?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20sistema%20web%20da%20CT%20Junior." // ALTERAR
 
   return (
     <section className="w-full py-12 md:py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
@@ -42,15 +37,15 @@ export function WhatsAppCTA() {
             <ul className="space-y-2 text-sm md:text-base">
               <li className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
-                <span>Resposta em até 30 minutos em horário comercial</span>
+                <span>Conversa direta com a equipe responsável</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
-                <span>Tire suas dúvidas diretamente com nossa equipe</span>
+                <span>Agilidade no primeiro atendimento</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
-                <span>Receba um orçamento preliminar rapidamente</span>
+                <span>Canal exclusivo para dúvidas e solicitações</span>
               </li>
             </ul>
           </div>

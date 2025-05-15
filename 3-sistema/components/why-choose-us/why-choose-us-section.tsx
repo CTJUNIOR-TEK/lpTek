@@ -75,7 +75,6 @@ export function WhyChooseUsSection() {
           />
         </div>
 
-        {/* MoreInfos agora fica sobreposto, criando transição suave entre seções */}
         <MoreInfos />
       </div>
     </section>

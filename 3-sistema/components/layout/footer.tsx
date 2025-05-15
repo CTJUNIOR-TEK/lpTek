@@ -113,7 +113,7 @@ export function Footer() {
         </div>
         <div className="mt-12 flex flex-col items-center justify-center border-t pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} CT Junior. Todos os direitos reservados.
+            © 2025 CT Junior. Todos os direitos reservados.
           </p>
         </div>
       </div>

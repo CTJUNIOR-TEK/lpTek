@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export function MoreInfos() {
   return (
-    <div className="mx-auto flex max-w-4xl flex-col items-center rounded-lg border border-secondary/20 bg-accent dark:bg-accent/50 p-4 text-center backdrop-blur-sm md:rounded-xl md:p-6 lg:p-8">
+    <div className="mx-auto flex max-w-4xl flex-col items-center rounded-lg border border-secondary/20 bg-accent/80 dark:bg-accent/50 p-4 text-center backdrop-blur-sm md:rounded-xl md:p-6 lg:p-8">
       {/* ---------- Avatares sobrepostos ---------- */}
       <div className="relative mb-8 flex justify-center">
         {/* Avatar do meio (fica no topo) */}
@@ -28,7 +28,7 @@ export function MoreInfos() {
       <h3 className="mb-2 max-w-3xl font-semibold text-white lg:text-lg">
         Precisa de mais informações?
       </h3>
-      <p className="mb-8 max-w-3xl text-gray-400 dark:text-muted-foreground lg:text-lg">
+      <p className="mb-8 max-w-3xl text-gray-300 dark:text-muted-foreground lg:text-lg">
         Nossa equipe está pronta para ajudar com qualquer dúvida ou necessidade
         específica do seu projeto. Entre em contato pelo formulário ou pelo
         WhatsApp para uma consultoria personalizada.
