@@ -7,11 +7,11 @@ import type { StepCardProps } from "@/components/steps/steps-card"
  * Cada objeto representa uma etapa do processo
  */
 export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActive" | "isCompleted" | "style">[] = [
-  { // ALTERAR TUDO
+  { 
     id: "definition",
     title: "Definição de Objetivos e Escopo",
     description:
-      "Levantamento das informações principais que o site deverá apresentar e funcionalidades necessárias.",
+      "Levantamento das informações principais que o aplicativo deverá apresentar e funcionalidades necessárias.",
     iconName: "Lightbulb",
     variant: "primary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-60" />,

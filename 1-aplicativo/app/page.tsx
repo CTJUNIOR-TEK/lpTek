@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { Hero } from "@/components/hero/hero"
 import { ServicesSection } from "@/components/services/services-section"
-import { ContactSection } from "@/components/contact/contact-section"
+impjort { ContactSection } from "@/components/contact/contact-section"
 import { StepsSection } from "@/components/steps/steps-section"
 import { WhatsAppButton } from "@/components/whatsapp/whatsapp-button"
 import { FaqSection } from "@/components/faq/faq-section"
@@ -20,8 +20,8 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero
-          title= { <>Sistemas Web <span className="text-primary">Sob Medida</span></> } // ALTERAR
-          subtitle="Transforme tarefas manuais em fluxos digitais, unifique suas operações e acelere o crescimento do seu negócio." // ALTERAR
+          title= { <> Aplicativos <span className="text-primary">Sob Medida</span></> } // 
+          subtitle="Desenvolvemos soluções mobile personalizadas, escaláveis e intuitivas, com foco em performance, design e experiência do usuário. Do planejamento à publicação nas lojas — cuidamos de tudo para você." // 
           ctaText="Veja Como Funciona" 
           ctaHref="#etapas"
           secondaryCtaText="Conheça a CT Junior"
