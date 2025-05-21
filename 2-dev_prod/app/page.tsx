@@ -1,4 +1,4 @@
-"use client"
+use client"
 
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
@@ -20,8 +20,8 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero
-          title= { <>Sistemas Web <span className="text-primary">Sob Medida</span></> } // ALTERAR
-          subtitle="Transforme tarefas manuais em fluxos digitais, unifique suas operações e acelere o crescimento do seu negócio." // ALTERAR
+          title= { <> Sua plataforma <span className="text-primary"> em constante evolução!</span></> } // 
+          // subtitle="Tenha uma equipe técnica dedicada ao seu projeto, com liberdade para evoluir, ajustar e escalar sua solução digital mês a mês." // 
           ctaText="Veja Como Funciona" 
           ctaHref="#etapas"
           secondaryCtaText="Conheça a CT Junior"
