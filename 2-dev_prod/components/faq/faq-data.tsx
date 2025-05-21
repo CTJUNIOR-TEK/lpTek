@@ -1,31 +1,32 @@
 export const faqData = {
-  heading: "Perguntas Frequentes", // ALTERAR TUDO
+  heading: "Perguntas Frequentes", // 
   description:
     "Encontre respostas para as perguntas mais comuns sobre nosso serviço. Não encontrou o que procura? Entre em contato com nossa equipe pelo formulário ou por WhatsApp.",
   items: [
-    {
-      id: "faq-1",
-      question: "Ainda não defini toda a estrutura e funcionalidades do meu sistema. Posso contratar mesmo assim?",
-      answer:
-        "Com certeza! Nossa equipe fica responsável por entender sua necessidade e definir claramente todas as funcionalidades e detalhes técnicos do seu sistema. Você receberá um documento detalhado para aprovar antes de iniciarmos o desenvolvimento, garantindo que tudo esteja alinhado ao seu objetivo.",
-    },
-    {
-      id: "faq-2",
-      question: "Vocês oferecem suporte técnico após o projeto entregue?",
-      answer:
-        "Sim! Oferecemos um período especial de suporte técnico de 6 meses após a entrega do sistema. Nesse tempo, nossa equipe fica disponível para resolver rapidamente possíveis bugs e problemas técnicos, garantindo o pleno funcionamento da solução desenvolvida. Além disso, entregamos toda a documentação detalhada do sistema e orientamos sua equipe sobre como utilizá-lo.",
-    },
-    {
-      id: "faq-3",
-      question: "Meu sistema poderá evoluir depois de entregue?",
-      answer:
-        "Sim! Desenvolvemos sistemas preparados para escalar com o crescimento do seu negócio. Além disso, oferecemos suporte contínuo e pacotes específicos para manutenção e adição de novas funcionalidades conforme sua empresa evoluir.",
-    },
-    {
-      id: "faq-4",
-      question: "Como vocês garantem a qualidade do projeto?",
-      answer:
-        "Somos uma equipe de estudantes apaixonados por tecnologia, sempre atualizados com as tendências e boas práticas do mercado. Buscamos constantemente aprender e aplicar o que há de mais moderno, o que nos permite entregar soluções de qualidade, atuais e alinhadas com as necessidades reais dos nossos clientes.",
-    },
-  ],
+  {
+    id: "faq-1",
+    question: "Ainda não tenho um escopo fechado. Posso começar mesmo assim?",
+    answer:
+      "Sim! O modelo de desenvolvimento de produto é ideal justamente para quem ainda está validando ideias ou precisa evoluir o sistema de forma gradual. Você contrata uma quantidade de horas mensais, e nosso time te ajuda a definir prioridades e direcionar as tarefas com base nas necessidades mais urgentes do seu produto.",
+  },
+  {
+    id: "faq-2",
+    question: "E se eu não usar todas as horas contratadas em um mês?",
+    answer:
+      "Sem problemas! As horas não utilizadas ficam acumuladas em um banco de horas para serem usadas nos próximos meses. Assim, você tem flexibilidade total para adaptar o uso conforme seu momento e demanda.",
+  },
+  {
+    id: "faq-3",
+    question: "Consigo adicionar novas funcionalidades ao longo do tempo?",
+    answer:
+      "Claro! Esse é o principal objetivo do nosso modelo contínuo. Com as horas contratadas, você pode usar o tempo para implementar melhorias, criar novas funcionalidades, ajustar integrações ou resolver problemas técnicos — tudo conforme seu planejamento evolui.",
+  },
+  {
+    id: "faq-4",
+    question: "Como vocês organizam o uso das horas e as entregas?",
+    answer:
+      "Você terá um responsável técnico que organiza as demandas, orienta as prioridades junto com você e acompanha a execução. Além disso, usamos ferramentas como Trello, Notion ou Slack para manter total transparência sobre o andamento das atividades.",
+  },
+]
+,
 }

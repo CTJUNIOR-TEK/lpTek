@@ -1,11 +1,11 @@
-import { Lightbulb, FileSearch, LayoutDashboard, Database, Rocket, Code2, Bug } from "lucide-react"
+import { Lightbulb, FileSearch, LayoutDashboard, Database, Rocket, Code2, Bug, Handshake,Users,Laptop,ClipboardList,RefreshCw,Hammer } from "lucide-react"
 import { cn } from "@/lib/utils"
 import type { ReactNode, CSSProperties } from "react"
 
 /**
  * Mapeamento de nomes de ícones para componentes de ícone
  */
-const iconMap = { // ALTERAR
+const iconMap = { // 
   Lightbulb,
   FileSearch,
   LayoutDashboard,
@@ -13,6 +13,12 @@ const iconMap = { // ALTERAR
   Code2,
   Bug,
   Rocket,
+  Handshake,
+  Users,
+  Laptop,
+  ClipboardList,
+  RefreshCw,
+  Hammer,
 }
 
 // StepCard.tsx  (troque APENAS o que está dentro do <div className=...>)
