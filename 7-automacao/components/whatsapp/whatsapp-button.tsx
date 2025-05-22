@@ -40,8 +40,8 @@ export function WhatsAppButton() {
 
   const openWhatsApp = () => {
     // Número fictício - substitua pelo número real
-    window.open( // ALTERAR MENSAGEM ENTRE %20
-      "https://wa.me/5527997767207?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20sistema%20web%20da%20CT%20Junior.",
+    window.open( // 
+      "https://wa.me/5527997767207?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20automação%20da%20CT%20Junior.",
       "_blank",
     )
   }

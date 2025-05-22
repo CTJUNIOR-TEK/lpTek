@@ -8,24 +8,25 @@ import { WhyProductFeatures } from "@/components/why-product/why-product-feature
  * Substitui a seção de serviços, mantendo a estética visual
  */
 export function WhyProductSection() {
-  return (
-    <section id="servicos" className="w-full py-12 pt-24 bg-background">
-      <div className="container px-4 md:px-6">
-        <SectionHeader
-          badge="Por que ter um sistema"
-          badgeColor="primary"
-          title={
-            <>
-              Transforme seu negócio com <span className="text-primary">soluções digitais</span>
-            </>
-          }
-          description="Descubra como um sistema web personalizado pode otimizar tarefas, reduzir custos e impulsionar o crescimento da sua empresa."
-        />
+return (
+  <section id="servicos" className="w-full py-12 pt-24 bg-background">
+    <div className="container px-4 md:px-6">
+      <SectionHeader
+        badge="Por que automatizar processos"
+        badgeColor="primary"
+        title={
+          <>
+            Aumente a eficiência com <span className="text-primary">automação sob medida</span>
+          </>
+        }
+        description="Reduza tarefas manuais, elimine erros operacionais e ganhe tempo com fluxos automatizados e integrados aos seus sistemas atuais."
+      />
 
-        <div className="max-w-7xl mx-auto mt-12">
-          <WhyProductFeatures />
-        </div>
+      <div className="max-w-7xl mx-auto mt-12">
+        <WhyProductFeatures />
       </div>
-    </section>
-  )
+    </div>
+  </section>
+)
+  return 
 }

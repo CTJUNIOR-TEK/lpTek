@@ -10,7 +10,7 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   { label: "Início", href: "#inicio" },
-  { label: "Sistema", href: "#servicos" }, // ALTERAR
+  { label: "Automação",href: "#servicos" }, 
   { label: "Diferenciais", href: "#por-que-nos-escolher" },
   { label: "Etapas", href: "#etapas" },
   { label: "FAQ", href: "#faq" },

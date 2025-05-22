@@ -2,16 +2,26 @@ import { Lightbulb, FileSearch, LayoutDashboard, Database, Rocket, Code2, Bug } 
 import { cn } from "@/lib/utils"
 import type { ReactNode, CSSProperties } from "react"
 
+import {
+  Workflow,
+  Plug,
+  LayoutList,
+  DatabaseZap,
+  Settings,
+  CheckCircle,
+} from "lucide-react"
+
+
 /**
  * Mapeamento de nomes de ícones para componentes de ícone
  */
-const iconMap = { // ALTERAR
-  Lightbulb,
-  FileSearch,
-  LayoutDashboard,
-  Database,
-  Code2,
-  Bug,
+const iconMap = {
+  Workflow,
+  Plug,
+  LayoutList,
+  DatabaseZap,
+  Settings,
+  CheckCircle,
   Rocket,
 }
 

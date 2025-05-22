@@ -1,31 +1,32 @@
 export const faqData = {
-  heading: "Perguntas Frequentes", // ALTERAR TUDO
+  heading: "Perguntas Frequentes", // 
   description:
     "Encontre respostas para as perguntas mais comuns sobre nosso serviço. Não encontrou o que procura? Entre em contato com nossa equipe pelo formulário ou por WhatsApp.",
-  items: [
+  items:
+  [
     {
       id: "faq-1",
-      question: "Ainda não defini toda a estrutura e funcionalidades do meu sistema. Posso contratar mesmo assim?",
+      question: "Ainda não sei exatamente o que pode ser automatizado. Posso contratar mesmo assim?",
       answer:
-        "Com certeza! Nossa equipe fica responsável por entender sua necessidade e definir claramente todas as funcionalidades e detalhes técnicos do seu sistema. Você receberá um documento detalhado para aprovar antes de iniciarmos o desenvolvimento, garantindo que tudo esteja alinhado ao seu objetivo.",
+      "Sim! Nossa equipe realiza um diagnóstico inicial para entender seus processos e identificar oportunidades de automação. A partir disso, desenhamos uma solução personalizada que gere mais eficiência e economia de tempo para o seu negócio.",
     },
     {
       id: "faq-2",
-      question: "Vocês oferecem suporte técnico após o projeto entregue?",
+      question: "A automação funciona com os sistemas que já usamos?",
       answer:
-        "Sim! Oferecemos um período especial de suporte técnico de 6 meses após a entrega do sistema. Nesse tempo, nossa equipe fica disponível para resolver rapidamente possíveis bugs e problemas técnicos, garantindo o pleno funcionamento da solução desenvolvida. Além disso, entregamos toda a documentação detalhada do sistema e orientamos sua equipe sobre como utilizá-lo.",
+      "Na maioria dos casos, sim. Desenvolvemos automações que podem se integrar com ERPs, CRMs, planilhas, plataformas de e-mail e outros sistemas utilizados pela sua empresa. Caso não haja integração direta, buscamos alternativas viáveis.",
     },
     {
       id: "faq-3",
-      question: "Meu sistema poderá evoluir depois de entregue?",
-      answer:
-        "Sim! Desenvolvemos sistemas preparados para escalar com o crescimento do seu negócio. Além disso, oferecemos suporte contínuo e pacotes específicos para manutenção e adição de novas funcionalidades conforme sua empresa evoluir.",
-    },
-    {
-      id: "faq-4",
-      question: "Como vocês garantem a qualidade do projeto?",
-      answer:
-        "Somos uma equipe de estudantes apaixonados por tecnologia, sempre atualizados com as tendências e boas práticas do mercado. Buscamos constantemente aprender e aplicar o que há de mais moderno, o que nos permite entregar soluções de qualidade, atuais e alinhadas com as necessidades reais dos nossos clientes.",
-    },
-  ],
+      question: "E se os processos mudarem no futuro?",
+    answer:
+      "Sem problemas! Nossa solução é escalável e pode ser ajustada conforme seu negócio evolui. Também oferecemos pacotes de manutenção contínua para acompanhar qualquer mudança ou necessidade adicional.",
+  },
+  {
+    id: "faq-4",
+    question: "Como vocês garantem que a automação está funcionando corretamente?",
+    answer:
+      "Durante o desenvolvimento, realizamos testes detalhados e validações com sua equipe. Após a entrega, oferecemos suporte técnico e treinamento, além de documentação explicativa para garantir autonomia e segurança na operação.",
+  },
+],
 }
