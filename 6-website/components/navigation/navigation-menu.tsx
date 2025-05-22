@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 
 import Link from "next/link"
 import { cn } from "@/lib/utils"
@@ -10,7 +10,7 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   { label: "Início", href: "#inicio" },
-  { label: "Sistema", href: "#servicos" }, // ALTERAR
+  { label: "Website", href: "#servicos" }, 
   { label: "Diferenciais", href: "#por-que-nos-escolher" },
   { label: "Etapas", href: "#etapas" },
   { label: "FAQ", href: "#faq" },

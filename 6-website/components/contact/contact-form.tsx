@@ -129,7 +129,7 @@ export function ContactForm({
         source: formData.source,
         budget: formData.budget,
         message: formData.message,
-        type: "Sistema Web" // ALTERAR
+        type: "Website" // 
       }
 
       await sendEmail(templateParams)

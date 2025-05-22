@@ -1,12 +1,12 @@
 import {
-  Layers,
-  Repeat,
-  Gauge,
-  LockKeyhole,
-  Cloud,
-  Wrench,
-  Rocket,
-  BarChart3,
+  Globe,
+  MessageSquare,
+  Smartphone,
+  Palette,
+  Edit3,
+  Search,
+  Users,
+  Briefcase,
 } from "lucide-react"
 import type { ReactNode } from "react"
 
@@ -17,61 +17,62 @@ export interface BenefitData {
   variant: "primary" | "secondary"
 }
 
-export const benefits: BenefitData[] = [
-  {
-    title: "Centralização de atividades",
-    description:
-      "Consolide processos, dados e equipes em um único lugar para facilitar a gestão do negócio.",
-    icon: <Layers className="h-8 w-8" />,
-    variant: "primary",
-  },
-  {
-    title: "Fluxo de trabalho otimizado",
-    description:
-      "Padronize etapas e ganhe fluidez operacional com um sistema pensado no seu processo.",
-    icon: <Repeat className="h-8 w-8" />,
-    variant: "secondary",
-  },
-  {
-    title: "Eficiência operacional",
-    description:
-      "Aumente produtividade e reduza gargalos através de rotinas configuradas sob medida.",
-    icon: <Gauge className="h-8 w-8" />,
-    variant: "primary",
-  },
-  {
-    title: "Acesso seguro por níveis",
-    description:
-      "Controle permissões para cada usuário, mantendo dados protegidos e auditáveis.",
-    icon: <LockKeyhole className="h-8 w-8" />,
-    variant: "secondary",
-  },
-  {
-    title: "Manutenção simplificada",
-    description:
-      "Atualizações e ajustes rápidos, sem interromper o funcionamento do sistema.",
-    icon: <Wrench className="h-8 w-8" />,
-    variant: "primary",
-  },
-  {
-    title: "Sem instalação local",
-    description:
-      "Use via navegador em qualquer dispositivo; atualizações acontecem direto no servidor.",
-    icon: <Cloud className="h-8 w-8" />,
-    variant: "secondary",
-  },
-  {
-    title: "Escalabilidade garantida",
-    description:
-      "O sistema cresce junto com sua empresa, pronto para novos módulos e usuários.",
-    icon: <Rocket className="h-8 w-8" />,
-    variant: "primary",
-  },
-  {
-    title: "Insights em tempo real",
-    description:
-      "Dashboards ajudam a tomar decisões rápidas e baseadas em dados confiáveis.",
-    icon: <BarChart3 className="h-8 w-8" />,
-    variant: "secondary",
-  },
-]
+export const benefits: BenefitData[] = 
+  [
+    {
+      title: "Presença digital profissional",
+      description:
+      "Transmita credibilidade com um site institucional bem estruturado, alinhado à identidade da sua marca.",
+      icon: <Globe className="h-8 w-8" />,
+      variant: "primary",
+    },
+    {
+      title: "Comunicação clara com o público",
+      description:
+      "Reúna todas as informações importantes sobre seu negócio em um só lugar, com fácil navegação e organização.",
+      icon: <MessageSquare className="h-8 w-8" />,
+      variant: "secondary",
+    },
+    {
+      title: "Responsividade garantida",
+      description:
+      "Seu site será acessível e funcional em qualquer dispositivo, com uma experiência fluida tanto no desktop quanto no mobile.",
+      icon: <Smartphone className="h-8 w-8" />,
+      variant: "primary",
+    },
+    {
+      title: "Identidade visual personalizada",
+      description:
+      "Aplicamos a identidade da sua marca no layout, criando um visual único e profissional que fortalece seu posicionamento.",
+      icon: <Palette className="h-8 w-8" />,
+      variant: "secondary",
+    },
+    {
+      title: "Facilidade de atualização",
+      description:
+      "Entregamos um painel administrativo intuitivo e um manual básico para que você possa atualizar textos e imagens com autonomia.",
+      icon: <Edit3 className="h-8 w-8" />,
+      variant: "primary",
+    },
+    {
+      title: "Melhor ranqueamento no Google",
+      description:
+      "Aplicamos práticas básicas de SEO para que seu site seja bem indexado por buscadores e tenha mais visibilidade.",
+      icon: <Search className="h-8 w-8" />,
+      variant: "secondary",
+    },
+    {
+      title: "Conexão com seu público",
+      description:
+      "Incluímos formulários de contato, localização no mapa e links para redes sociais para facilitar o relacionamento com seus clientes.",
+      icon: <Users className="h-8 w-8" />,
+      variant: "primary",
+    },
+    {
+      title: "Apoio comercial e institucional",
+      description:
+      "Use o site como base para apresentações, propostas, parcerias e divulgação — reforçando a autoridade da sua empresa.",
+      icon: <Briefcase className="h-8 w-8" />,
+      variant: "secondary",
+    },
+  ]
