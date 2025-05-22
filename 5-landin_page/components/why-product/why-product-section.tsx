@@ -6,20 +6,20 @@ import { WhyProductFeatures } from "@/components/why-product/why-product-feature
 /**
  * Seção que explica os benefícios de ter um sistema web
  * Substitui a seção de serviços, mantendo a estética visual
- */
-export function WhyProductSection() {
+ */ 
+ export function WhyProductSection(){
   return (
     <section id="servicos" className="w-full py-12 pt-24 bg-background">
       <div className="container px-4 md:px-6">
         <SectionHeader
-          badge="Por que ter um sistema"
+          badge="Por que ter uma Landing Page"
           badgeColor="primary"
           title={
             <>
-              Transforme seu negócio com <span className="text-primary">soluções digitais</span>
+              Gere mais resultados com uma <span className="text-primary">landing page estratégica</span>
             </>
           }
-          description="Descubra como um sistema web personalizado pode otimizar tarefas, reduzir custos e impulsionar o crescimento da sua empresa."
+          description="Descubra como uma landing page personalizada pode atrair mais leads, potencializar suas campanhas e aumentar suas conversões no digital."
         />
 
         <div className="max-w-7xl mx-auto mt-12">
@@ -29,3 +29,4 @@ export function WhyProductSection() {
     </section>
   )
 }
+

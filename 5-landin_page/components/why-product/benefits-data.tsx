@@ -10,6 +10,16 @@ import {
 } from "lucide-react"
 import type { ReactNode } from "react"
 
+import {
+  ShoppingCart,
+  ClipboardList,
+  CreditCard,
+  Truck,
+  Palette,
+  Smartphone,
+  Settings,
+  LineChart,
+} from "lucide-react"
 export interface BenefitData {
   title: string
   description: string
@@ -17,61 +27,62 @@ export interface BenefitData {
   variant: "primary" | "secondary"
 }
 
-export const benefits: BenefitData[] = [
+export const benefits: BenefitData[] = 
+[
   {
-    title: "Centralização de atividades",
+    title: "Venda sem depender de loja física",
     description:
-      "Consolide processos, dados e equipes em um único lugar para facilitar a gestão do negócio.",
-    icon: <Layers className="h-8 w-8" />,
+      "Tenha uma vitrine aberta 24h por dia, alcance clientes em qualquer lugar e aumente sua receita com vendas online.",
+    icon: <ShoppingCart className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Fluxo de trabalho otimizado",
+    title: "Gestão simplificada de pedidos",
     description:
-      "Padronize etapas e ganhe fluidez operacional com um sistema pensado no seu processo.",
-    icon: <Repeat className="h-8 w-8" />,
+      "Acompanhe vendas, controle o estoque e visualize entregas em uma única plataforma, com praticidade e autonomia.",
+    icon: <ClipboardList className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Eficiência operacional",
+    title: "Pagamentos integrados",
     description:
-      "Aumente produtividade e reduza gargalos através de rotinas configuradas sob medida.",
-    icon: <Gauge className="h-8 w-8" />,
+      "Receba por Pix, cartão ou boleto com segurança. Integrado aos principais gateways de pagamento do mercado.",
+    icon: <CreditCard className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Acesso seguro por níveis",
+    title: "Frete automatizado",
     description:
-      "Controle permissões para cada usuário, mantendo dados protegidos e auditáveis.",
-    icon: <LockKeyhole className="h-8 w-8" />,
+      "Ofereça cálculo de frete em tempo real e opções de entrega variadas (Correios, transportadora ou retirada local).",
+    icon: <Truck className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Manutenção simplificada",
+    title: "Loja com sua identidade visual",
     description:
-      "Atualizações e ajustes rápidos, sem interromper o funcionamento do sistema.",
-    icon: <Wrench className="h-8 w-8" />,
+      "Criamos um layout totalmente personalizado, alinhado com sua marca, para transmitir confiança e profissionalismo.",
+    icon: <Palette className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Sem instalação local",
+    title: "Acesso de qualquer dispositivo",
     description:
-      "Use via navegador em qualquer dispositivo; atualizações acontecem direto no servidor.",
-    icon: <Cloud className="h-8 w-8" />,
+      "Sua loja 100% responsiva: funciona perfeitamente em celulares, tablets e computadores, sem necessidade de app.",
+    icon: <Smartphone className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Escalabilidade garantida",
+    title: "Controle total do seu negócio",
     description:
-      "O sistema cresce junto com sua empresa, pronto para novos módulos e usuários.",
-    icon: <Rocket className="h-8 w-8" />,
+      "Administre produtos, preços, cupons, estoque e categorias com liberdade e total autonomia no painel de controle.",
+    icon: <Settings className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Insights em tempo real",
+    title: "Relatórios de desempenho",
     description:
-      "Dashboards ajudam a tomar decisões rápidas e baseadas em dados confiáveis.",
-    icon: <BarChart3 className="h-8 w-8" />,
+      "Visualize métricas de vendas, produtos mais acessados e comportamento dos clientes para tomar decisões estratégicas.",
+    icon: <LineChart className="h-8 w-8" />,
     variant: "secondary",
   },
 ]

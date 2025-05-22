@@ -19,14 +19,15 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <Hero
-          title= { <>Sistemas Web <span className="text-primary">Sob Medida</span></> } // ALTERAR
-          subtitle="Transforme tarefas manuais em fluxos digitais, unifique suas operações e acelere o crescimento do seu negócio." // ALTERAR
-          ctaText="Veja Como Funciona" 
-          ctaHref="#etapas"
-          secondaryCtaText="Conheça a CT Junior"
-          secondaryCtaHref="https://www.ctjunior.com.br/"
-        />
+      <Hero
+        title={<>Websites Institucionais <span className="text-primary">Personalizados</span></>}
+        subtitle="Fortaleça sua presença online com um site profissional, responsivo e alinhado à identidade da sua marca."
+        ctaText="Veja Como Funciona"
+        ctaHref="#etapas"
+        secondaryCtaText="Conheça a CT Junior"
+        secondaryCtaHref="https://www.ctjunior.com.br/"
+      />
+        
         <WhyProductSection />
         <WhatsAppCTA />
         {/* <ServicesSection />  // NAO USADO MAS BOA SEÇÃO PARA DEIXAR SALVA */}

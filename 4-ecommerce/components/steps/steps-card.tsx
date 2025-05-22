@@ -1,17 +1,26 @@
-import { Lightbulb, FileSearch, LayoutDashboard, Database, Rocket, Code2, Bug } from "lucide-react"
+import { Lightbulb, FileSearch, LayoutDashboard, Database,  Code2, Bug } from "lucide-react"
 import { cn } from "@/lib/utils"
 import type { ReactNode, CSSProperties } from "react"
 
+import {
+  Target,
+  FolderInput,
+  LayoutGrid,
+  Brush,
+  Settings,
+  CheckCircle2,
+  Rocket,
+} from "lucide-react"
 /**
  * Mapeamento de nomes de ícones para componentes de ícone
  */
-const iconMap = { // ALTERAR
-  Lightbulb,
-  FileSearch,
-  LayoutDashboard,
-  Database,
-  Code2,
-  Bug,
+const iconMap = {
+  Target,
+  FolderInput,
+  LayoutGrid,
+  Brush,
+  Settings,
+  CheckCircle2,
   Rocket,
 }
 
