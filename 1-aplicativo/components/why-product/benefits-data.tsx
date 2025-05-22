@@ -1,12 +1,12 @@
 import {
-  Layers,
-  Repeat,
+  Touchpad,
+  Smartphone,
+  Bell,
+  SlidersHorizontal,
+  UploadCloud,
+  Plug,
   Gauge,
-  LockKeyhole,
-  Cloud,
   Wrench,
-  Rocket,
-  BarChart3,
 } from "lucide-react"
 import type { ReactNode } from "react"
 
@@ -17,61 +17,62 @@ export interface BenefitData {
   variant: "primary" | "secondary"
 }
 
-export const benefits: BenefitData[] = [
+export const benefits: BenefitData[] = 
+[
   {
-    title: "Centralização de atividades",
+    title: "Experiência intuitiva para o usuário",
     description:
-      "Consolide processos, dados e equipes em um único lugar para facilitar a gestão do negócio.",
-    icon: <Layers className="h-8 w-8" />,
+      "Desenvolvemos aplicativos com foco em usabilidade, garantindo navegação fluida e design centrado no usuário.",
+    icon: <Touchpad className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Fluxo de trabalho otimizado",
+    title: "Acesso direto na palma da mão",
     description:
-      "Padronize etapas e ganhe fluidez operacional com um sistema pensado no seu processo.",
-    icon: <Repeat className="h-8 w-8" />,
+      "Leve sua marca para o celular do seu cliente com praticidade, visibilidade e presença constante no dia a dia.",
+    icon: <Smartphone className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Eficiência operacional",
+    title: "Notificações em tempo real",
     description:
-      "Aumente produtividade e reduza gargalos através de rotinas configuradas sob medida.",
+      "Envie alertas, promoções e atualizações diretamente aos usuários com notificações push integradas.",
+    icon: <Bell className="h-8 w-8" />,
+    variant: "primary",
+  },
+  {
+    title: "Funcionalidades sob medida",
+    description:
+      "Cada funcionalidade é pensada para atender às necessidades do seu negócio, com tecnologia moderna e escalável.",
+    icon: <SlidersHorizontal className="h-8 w-8" />,
+    variant: "secondary",
+  },
+  {
+    title: "Publicação nas lojas (Play/App Store)",
+    description:
+      "Cuidamos da publicação e das diretrizes necessárias para disponibilizar o app nas principais plataformas.",
+    icon: <UploadCloud className="h-8 w-8" />,
+    variant: "primary",
+  },
+  {
+    title: "Integrações com sistemas e APIs",
+    description:
+      "Seu app pode se conectar com ERPs, CRMs, plataformas de pagamento, geolocalização, e muito mais.",
+    icon: <Plug className="h-8 w-8" />,
+    variant: "secondary",
+  },
+  {
+    title: "Performance e estabilidade",
+    description:
+      "Aplicativos otimizados para rodar com fluidez e segurança, mesmo com grande volume de usuários.",
     icon: <Gauge className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Acesso seguro por níveis",
+    title: "Atualizações e suporte contínuo",
     description:
-      "Controle permissões para cada usuário, mantendo dados protegidos e auditáveis.",
-    icon: <LockKeyhole className="h-8 w-8" />,
-    variant: "secondary",
-  },
-  {
-    title: "Manutenção simplificada",
-    description:
-      "Atualizações e ajustes rápidos, sem interromper o funcionamento do sistema.",
+      "Oferecemos acompanhamento técnico e possibilidade de evoluir seu app com novas funcionalidades ao longo do tempo.",
     icon: <Wrench className="h-8 w-8" />,
-    variant: "primary",
-  },
-  {
-    title: "Sem instalação local",
-    description:
-      "Use via navegador em qualquer dispositivo; atualizações acontecem direto no servidor.",
-    icon: <Cloud className="h-8 w-8" />,
-    variant: "secondary",
-  },
-  {
-    title: "Escalabilidade garantida",
-    description:
-      "O sistema cresce junto com sua empresa, pronto para novos módulos e usuários.",
-    icon: <Rocket className="h-8 w-8" />,
-    variant: "primary",
-  },
-  {
-    title: "Insights em tempo real",
-    description:
-      "Dashboards ajudam a tomar decisões rápidas e baseadas em dados confiáveis.",
-    icon: <BarChart3 className="h-8 w-8" />,
     variant: "secondary",
   },
 ]
