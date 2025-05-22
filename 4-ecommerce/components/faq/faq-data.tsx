@@ -1,31 +1,31 @@
 export const faqData = {
-  heading: "Perguntas Frequentes", // ALTERAR TUDO
+  heading: "Perguntas Frequentes", // 
   description:
     "Encontre respostas para as perguntas mais comuns sobre nosso serviço. Não encontrou o que procura? Entre em contato com nossa equipe pelo formulário ou por WhatsApp.",
-  items: [
-    {
-      id: "faq-1",
-      question: "Ainda não defini toda a estrutura e funcionalidades do meu sistema. Posso contratar mesmo assim?",
-      answer:
-        "Com certeza! Nossa equipe fica responsável por entender sua necessidade e definir claramente todas as funcionalidades e detalhes técnicos do seu sistema. Você receberá um documento detalhado para aprovar antes de iniciarmos o desenvolvimento, garantindo que tudo esteja alinhado ao seu objetivo.",
-    },
-    {
-      id: "faq-2",
-      question: "Vocês oferecem suporte técnico após o projeto entregue?",
-      answer:
-        "Sim! Oferecemos um período especial de suporte técnico de 6 meses após a entrega do sistema. Nesse tempo, nossa equipe fica disponível para resolver rapidamente possíveis bugs e problemas técnicos, garantindo o pleno funcionamento da solução desenvolvida. Além disso, entregamos toda a documentação detalhada do sistema e orientamos sua equipe sobre como utilizá-lo.",
-    },
-    {
-      id: "faq-3",
-      question: "Meu sistema poderá evoluir depois de entregue?",
-      answer:
-        "Sim! Desenvolvemos sistemas preparados para escalar com o crescimento do seu negócio. Além disso, oferecemos suporte contínuo e pacotes específicos para manutenção e adição de novas funcionalidades conforme sua empresa evoluir.",
-    },
-    {
-      id: "faq-4",
-      question: "Como vocês garantem a qualidade do projeto?",
-      answer:
-        "Somos uma equipe de estudantes apaixonados por tecnologia, sempre atualizados com as tendências e boas práticas do mercado. Buscamos constantemente aprender e aplicar o que há de mais moderno, o que nos permite entregar soluções de qualidade, atuais e alinhadas com as necessidades reais dos nossos clientes.",
-    },
-  ],
+items: [
+  {
+    id: "faq-1",
+    question: "Ainda não tenho todo o conteúdo e produtos prontos. Posso contratar mesmo assim?",
+    answer:
+      "Sim! Podemos começar o projeto mesmo sem todos os produtos cadastrados. Durante a fase inicial, ajudamos a estruturar o layout da loja e organizamos o sistema para facilitar o cadastro posterior. Também orientamos sobre boas práticas de apresentação de produtos e descrição de serviços.",
+  },
+  {
+    id: "faq-2",
+    question: "A loja terá integração com meios de pagamento e entrega?",
+    answer:
+      "Sim! Sua loja será integrada com os principais meios de pagamento (como Pix, cartão de crédito, boleto) e com opções logísticas (Correios, Jadlog, transportadoras ou retirada local). Configuramos tudo para que você possa vender com segurança e eficiência.",
+  },
+  {
+    id: "faq-3",
+    question: "Vou conseguir gerenciar os pedidos e o estoque sozinho depois que o site for entregue?",
+    answer:
+      "Com certeza! Entregamos um painel administrativo completo e intuitivo, além de um manual de uso e treinamento básico. Você poderá acompanhar pedidos, editar produtos, controlar o estoque e muito mais — com total autonomia.",
+  },
+  {
+    id: "faq-4",
+    question: "O site será adaptado para celular e aparecerá no Google?",
+    answer:
+      "Sim! Todos os nossos e-commerces são responsivos, ou seja, funcionam perfeitamente em celulares e tablets. Além disso, aplicamos técnicas básicas de SEO para garantir que sua loja seja indexada corretamente pelos buscadores.",
+  },
+],
 }

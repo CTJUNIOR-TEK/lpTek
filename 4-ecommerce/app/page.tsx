@@ -20,8 +20,8 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero
-          title= { <>Sistemas Web <span className="text-primary">Sob Medida</span></> } // ALTERAR
-          subtitle="Transforme tarefas manuais em fluxos digitais, unifique suas operações e acelere o crescimento do seu negócio." // ALTERAR
+          title= { <>Seu ecommerce <span className="text-primary"> Na Palma da Mão</span></> } // 
+          subtitle="Desenvolvemos e-commerces personalizados, integrados com meios de pagamento e logística, para que você comece a vender com autonomia, controle e presença digital profissional — sem complicações." // 
           ctaText="Veja Como Funciona" 
           ctaHref="#etapas"
           secondaryCtaText="Conheça a CT Junior"

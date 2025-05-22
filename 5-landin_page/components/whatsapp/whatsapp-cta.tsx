@@ -11,7 +11,7 @@ import { MessageSquare, ArrowRight } from "lucide-react"
 export function WhatsAppCTA() {
 
   // URL completa do WhatsApp
-  const whatsappUrl = "https://wa.me/5527997767207?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20sistema%20web%20da%20CT%20Junior." // ALTERAR
+  const whatsappUrl = "https://wa.me/5527997767207?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20landing%20page%20da%20CT%20Junior." 
 
   return (
     <section className="w-full py-12 md:py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
