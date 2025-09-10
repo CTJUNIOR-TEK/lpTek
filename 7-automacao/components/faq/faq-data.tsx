@@ -5,27 +5,27 @@ export const faqData = {
   items: [
     {
       id: "faq-1",
-      question: "Ainda não defini toda a estrutura e funcionalidades do meu sistema. Posso contratar mesmo assim?",
+      question: "O chatbot realmente consegue atender meus clientes sozinho ou ele só encaminha para um humano?",
       answer:
-        "Com certeza! Nossa equipe fica responsável por entender sua necessidade e definir claramente todas as funcionalidades e detalhes técnicos do seu sistema. Você receberá um documento detalhado para aprovar antes de iniciarmos o desenvolvimento, garantindo que tudo esteja alinhado ao seu objetivo.",
+        "O chatbot é capaz de resolver a maior parte das interações sozinho: responder dúvidas frequentes, informar preços, disponibilidade de produtos, mostrar catálogo e até coletar dados do cliente. Apenas quando o cliente demonstra intenção clara de compra ou pede algo mais complexo, ele é direcionado automaticamente para um atendente humano. Assim, você ganha escala sem perder o toque pessoal quando necessário.",
     },
     {
       id: "faq-2",
-      question: "Vocês oferecem suporte técnico após o projeto entregue?",
+      question: "Quanto tempo demora para implantar o chatbot no meu WhatsApp?",
       answer:
-        "Sim! Oferecemos um período especial de suporte técnico de 6 meses após a entrega do sistema. Nesse tempo, nossa equipe fica disponível para resolver rapidamente possíveis bugs e problemas técnicos, garantindo o pleno funcionamento da solução desenvolvida. Além disso, entregamos toda a documentação detalhada do sistema e orientamos sua equipe sobre como utilizá-lo.",
+        "O prazo varia de acordo com a quantidade de informações que você deseja incluir. Em geral, após recebermos suas perguntas frequentes, catálogo e integrações desejadas (planilhas, Google Sheets ou Supabase), a implantação leva alguns dias. Nossa equipe faz a configuração guiada junto com você e entrega o bot pronto para uso rapidamente.",
     },
     {
       id: "faq-3",
-      question: "Meu sistema poderá evoluir depois de entregue?",
+      question: "O chatbot pode ser adaptado ao meu segmento de negócio?",
       answer:
-        "Sim! Desenvolvemos sistemas preparados para escalar com o crescimento do seu negócio. Além disso, oferecemos suporte contínuo e pacotes específicos para manutenção e adição de novas funcionalidades conforme sua empresa evoluir.",
+        "Sim! O chatbot é totalmente personalizável. Seja você dono de loja de roupas, clínica odontológica, escritório de serviços ou qualquer outro negócio, conseguimos treinar o bot com as perguntas e respostas que fazem sentido para o seu público. Isso garante que o atendimento seja relevante e útil para os seus clientes. ",
     },
     {
       id: "faq-4",
-      question: "Como vocês garantem a qualidade do projeto?",
+      question: "Qual é o investimento e como funciona o pagamento?",
       answer:
-        "Somos uma equipe de estudantes apaixonados por tecnologia, sempre atualizados com as tendências e boas práticas do mercado. Buscamos constantemente aprender e aplicar o que há de mais moderno, o que nos permite entregar soluções de qualidade, atuais e alinhadas com as necessidades reais dos nossos clientes.",
+        "O modelo é simples: R$ 2.000 pela implantação inicial (configuração, treinamento e publicação) e R$ 500 por mês para suporte, manutenção e atualizações. Um investimento acessível diante do tempo economizado e do aumento nas vendas.",
     },
   ],
 }

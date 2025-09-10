@@ -26,16 +26,14 @@ export function MoreInfos() {
 
       {/* ---------- Texto & CTA ---------- */}
       <h3 className="mb-2 max-w-3xl font-semibold text-white lg:text-lg">
-        Precisa de mais informações?
+        Pronto para acelerar seu WhatsApp?
       </h3>
       <p className="mb-8 max-w-3xl text-gray-300 dark:text-muted-foreground lg:text-lg">
-        Nossa equipe está pronta para ajudar com qualquer dúvida ou necessidade
-        específica do seu projeto. Entre em contato pelo formulário ou pelo
-        WhatsApp para uma consultoria personalizada.
+        Coloque um pré-atendente digital no seu negócio. Entre em contato e descubra como o chatbot pode responder clientes automaticamente e aumentar suas vendas.
       </p>
       <div className="flex w-full flex-col gap-2 sm:flex-row sm:justify-center">
         <Button className="w-full bg-primary text-white hover:bg-primary/90 sm:w-auto" href="#contato">
-          Fale Conosco!
+          Contratar o Bot agora
         </Button>
       </div>
     </div>

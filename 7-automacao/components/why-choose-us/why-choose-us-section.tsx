@@ -54,22 +54,22 @@ export function WhyChooseUsSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
           <FeatureCard
             icon={<UserCheckIcon />}
-            title="Personalização"
-            description="Somente iniciamos a execução dos projetos depois da aprovação de nossos protótipos/mockups, modificando o que cliente desejar enquanto não é aprovada. Nosso papel é entregar exatamente o que você busca."
+            title="Personalização do Bot"
+            description="Adaptamos o chatbot ao seu segmento — seja loja, clínica ou escritório — para responder exatamente às perguntas dos seus clientes."
             delay={0}
             color="text-primary"
           />
           <FeatureCard
             icon={<DollarIcon />}
-            title="Custo-benefício"
-            description="Nossas soluções são até 30% mais baratas do que o mercado geral de engenharia de software. Quanto maior o projeto, maior o custo benefício e satisfação final."
+            title="Investimento acessível"
+            description="Plano direto: R$ 2.000 de implantação + R$ 500/mês. Um custo baixo comparado ao retorno em tempo economizado e vendas aceleradas."
             delay={1}
             color="text-secondary"
           />
           <FeatureCard
             icon={<CpuIcon />}
-            title="Inovação Tecnológica"
-            description="Utilizamos as tecnologias mais recentes e melhores práticas do mercado para desenvolver soluções modernas, escaláveis e preparadas para o futuro."
+            title="Automação inteligente"
+            description="Usamos tecnologias atuais para criar bots rápidos, escaláveis e prontos para evoluir junto com a sua empresa."
             delay={2}
             color="text-primary"
           />
