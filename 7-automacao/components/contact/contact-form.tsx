@@ -84,10 +84,8 @@ export function ContactForm({
 
   const budgetOptions = [
     { value: "", label: "Selecione uma opção" },
-    { value: "0-5000", label: "R$0–R$5.000" },
-    { value: "5000-10000", label: "R$5.000–R$10.000" },
-    { value: "10000-20000", label: "R$10.000–R$20.000" },
-    { value: "20000+", label: "R$+20.000" },
+    { value: "2000+500", label: "R$2.000 + R$500 mensal" },
+    
   ]
 
   const validateForm = (): boolean => {
@@ -240,7 +238,7 @@ export function ContactForm({
             id="message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            placeholder="Descreva seu projeto, objetivos, funcionalidades desejadas e qualquer outra informação relevante para entendermos melhor sua necessidade."
+            placeholder="Descreva sua empresa e o que espera do chatbot: quais produtos/serviços oferece, como é o atendimento atual e quais tarefas você gostaria de automatizar (estoque, preços, catálogo, agendamento etc.)."
             className={`min-h-[150px] ${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
             error={errors.message}
           />

@@ -22,13 +22,13 @@ export function FaqSection({
           <div className="container py-12 md:py-24 lg:pt-24 z-10 space-y-16">
             <div className="mx-auto flex max-w-3xl flex-col text-left md:text-center">
               <SectionHeader 
-                badge="FAQ"
+                badge="Dúvidas sobre o Bot"
                 title={
                   <>
-                    <span className="dark:text-white">Perguntas</span> <span className="text-secondary">Frequentes</span>
+                    <span className="dark:text-white">Perguntas Frequentes sobre o </span> <span className="text-secondary">ChatBot</span>
                   </>
                 }
-                description="Encontre respostas para as perguntas mais comuns sobre nosso serviço. Não encontrou o que procura? Entre em contato com nossa equipe pelo formulário ou por WhatsApp."
+                description="Reunimos as dúvidas mais comuns sobre nosso atendente virtual no WhatsApp. Se não encontrar sua resposta aqui, fale com nossa equipe pelo formulário ou diretamente no WhatsApp."
                 badgeColor="secondary"
               />
             </div>

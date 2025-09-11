@@ -11,7 +11,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
     id: "definition",
     title: "Definição de Objetivos e Escopo",
     description:
-      "Levantamento das informações principais que o site deverá apresentar e funcionalidades necessárias.",
+      "Levantamos suas necessidades: quais dúvidas o bot deve responder, quais informações são essenciais (preço, estoque, catálogo etc.).",
     iconName: "Lightbulb",
     variant: "primary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-60" />,
@@ -19,7 +19,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "data-collection",
     title: "Coleta de Informações",
-    description: "Mapeamos fluxos atuais, regras de negócio e documentos envolvidos nas operações.",
+    description: "Reunimos FAQs, catálogo de produtos/serviços e detalhes sobre sua operação para treinar o chatbot.",
     iconName: "FileSearch",
     variant: "secondary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-60" />,
@@ -27,7 +27,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "prototyping-validation",
     title: "Prototipação e Validação",
-    description: "Criamos mockups com telas e fluxos principais para validação antes do desenvolvimento.",
+    description: "Criamos fluxos de conversa iniciais e validamos com você antes de avançar para a implantação.",
     iconName: "LayoutDashboard",
     variant: "primary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-60" />,
@@ -35,7 +35,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "data-modeling",
     title: "Modelagem de Dados",
-    description: "Estruturamos os dados e definimos integrações com sistemas e serviços externos.",
+    description: "Conectamos o bot a planilhas, Google Sheets ou Supabase para registrar contatos e dados de atendimento.",
     iconName: "Database",
     variant: "secondary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-60" />,
@@ -43,7 +43,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "technical-development",
     title: "Desenvolvimento Técnico",
-    description: "Codificamos o sistema com foco em segurança, escalabilidade e aderência ao escopo aprovado.",
+    description: "Montamos o fluxo final no WhatsApp, configurando mensagens automáticas, catálogo e escalonamento para humano.",
     iconName: "Code2",
     variant: "primary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-60" />,
@@ -51,7 +51,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "testing-adjustments",
     title: "Testes e Ajustes",
-    description: "Validamos as funcionalidades, corrigimos erros e refinamos a experiência de uso.",
+    description: "Simulamos conversas reais, ajustamos respostas e refinamos a experiência do cliente.",
     iconName: "Bug",
     variant: "secondary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-60" />,
@@ -59,7 +59,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "launch-training",
     title: "Publicação e Treinamento",
-    description: "Fazemos o deploy da solução, entregamos documentação e capacitamos a equipe usuária.",
+    description: "Colocamos o bot em produção no seu WhatsApp e treinamos sua equipe para acompanhar e aproveitar todos os recursos.",
     iconName: "Rocket",
     variant: "primary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-60" />,

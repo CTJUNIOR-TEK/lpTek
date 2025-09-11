@@ -10,7 +10,7 @@ export function ContactSection() {
             badge="Contato"
             title={
               <>
-                Vamos conversar sobre seu <span className="text-primary">projeto</span>?
+                Vamos conversar sobre seu <span className="text-primary">ChatBot</span>?
               </>
             }
             description="Preencha o formulário abaixo ou envie-nos uma mensagem por WhatsApp e nosso time entrará em contato o mais rápido possível."
