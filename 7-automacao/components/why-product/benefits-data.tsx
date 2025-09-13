@@ -19,58 +19,58 @@ export interface BenefitData {
 
 export const benefits: BenefitData[] = [
   {
-    title: "Centralização de atividades",
+    title: "Atendimento centralizado",
     description:
-      "Consolide processos, dados e equipes em um único lugar para facilitar a gestão do negócio.",
+      "Concentre todas as dúvidas no WhatsApp: preço, estoque e informações de produtos em um só canal.",
     icon: <Layers className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Fluxo de trabalho otimizado",
+    title: "Fluxo de conversa otimizado",
     description:
-      "Padronize etapas e ganhe fluidez operacional com um sistema pensado no seu processo.",
+      "O bot conduz o cliente de forma natural até a compra, sem perder etapas do atendimento.",
     icon: <Repeat className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Eficiência operacional",
+    title: "Eficiência no atendimento",
     description:
-      "Aumente produtividade e reduza gargalos através de rotinas configuradas sob medida.",
+      "Aumente a produtividade da equipe ao deixar o bot cuidar das perguntas repetitivas.",
     icon: <Gauge className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Acesso seguro por níveis",
+    title: "Respostas seguras",
     description:
-      "Controle permissões para cada usuário, mantendo dados protegidos e auditáveis.",
+      "Garanta que os clientes recebam informações corretas e confiáveis em qualquer horário.",
     icon: <LockKeyhole className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Manutenção simplificada",
+    title: "Ajustes simplificados",
     description:
-      "Atualizações e ajustes rápidos, sem interromper o funcionamento do sistema.",
+      "Atualize facilmente catálogo, preços e mensagens sem precisar de suporte técnico.",
     icon: <Wrench className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Sem instalação local",
+    title: "Sem complicação técnica",
     description:
-      "Use via navegador em qualquer dispositivo; atualizações acontecem direto no servidor.",
+      "O chatbot funciona direto no WhatsApp, sem necessidade de instalação ou infraestrutura extra.",
     icon: <Cloud className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Escalabilidade garantida",
+    title: "Escalável para crescer",
     description:
-      "O sistema cresce junto com sua empresa, pronto para novos módulos e usuários.",
+      "O bot acompanha o crescimento da sua empresa, atendendo cada vez mais clientes ao mesmo tempo.",
     icon: <Rocket className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Insights em tempo real",
+    title: "Insights automáticos",
     description:
-      "Dashboards ajudam a tomar decisões rápidas e baseadas em dados confiáveis.",
+      "Registre atendimentos em planilhas ou banco de dados e tome decisões com base em dados reais.",
     icon: <BarChart3 className="h-8 w-8" />,
     variant: "secondary",
   },

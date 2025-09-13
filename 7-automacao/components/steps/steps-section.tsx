@@ -113,14 +113,14 @@ export function StepsSection() {
     <section ref={sectionRef} id="etapas" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <SectionHeader
-          badge="Nossas Etapas"
+          badge="Etapas da Automação"
           badgeColor="primary"
           title={
             <>
-              Como transformamos sua <span className="text-primary">ideia</span> em realidade
+              Como implantamos seu <span className="text-primary">ChatBot</span> no WhatsApp
             </>
           }
-          description="Nosso processo de desenvolvimento é estruturado em etapas claras para garantir qualidade e transparência."
+          description="Nosso processo é simples, guiado e transparente: em poucas etapas, você terá um atendente virtual pronto para agilizar seu atendimento e aumentar suas vendas."
         />
 
         <div className="max-w-7xl mx-auto mt-12">
