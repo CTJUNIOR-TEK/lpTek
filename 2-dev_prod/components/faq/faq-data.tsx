@@ -1,31 +1,37 @@
 export const faqData = {
-  heading: "Perguntas Frequentes", // ALTERAR TUDO
+  heading: "Perguntas Frequentes",
   description:
-    "Encontre respostas para as perguntas mais comuns sobre nosso serviço. Não encontrou o que procura? Entre em contato com nossa equipe pelo formulário ou por WhatsApp.",
+    "Tire suas dúvidas sobre o modelo de Desenvolvimento Sob Demanda. Não encontrou o que procura? Entre em contato com nossa equipe.",
   items: [
     {
       id: "faq-1",
-      question: "Ainda não defini toda a estrutura e funcionalidades do meu sistema. Posso contratar mesmo assim?",
+      question: "Como funciona o modelo de cobrança por horas?",
       answer:
-        "Com certeza! Nossa equipe fica responsável por entender sua necessidade e definir claramente todas as funcionalidades e detalhes técnicos do seu sistema. Você receberá um documento detalhado para aprovar antes de iniciarmos o desenvolvimento, garantindo que tudo esteja alinhado ao seu objetivo.",
+        "Você contrata um pacote mensal de horas (ex: 80h, 120h, 160h) e utiliza conforme surgem as demandas. As horas não utilizadas acumulam em um banco próprio para uso em meses seguintes. Sem desperdício, sem burocracia.",
     },
     {
       id: "faq-2",
-      question: "Vocês oferecem suporte técnico após o projeto entregue?",
+      question: "Posso cancelar o contrato a qualquer momento?",
       answer:
-        "Sim! Oferecemos um período especial de suporte técnico de 6 meses após a entrega do sistema. Nesse tempo, nossa equipe fica disponível para resolver rapidamente possíveis bugs e problemas técnicos, garantindo o pleno funcionamento da solução desenvolvida. Além disso, entregamos toda a documentação detalhada do sistema e orientamos sua equipe sobre como utilizá-lo.",
+        "Sim! O contrato é totalmente flexível. Você pode encerrar a contratação quando quiser, sem multas ou taxas de cancelamento. Você paga apenas pelo que foi efetivamente utilizado.",
     },
     {
       id: "faq-3",
-      question: "Meu sistema poderá evoluir depois de entregue?",
+      question: "Como funciona a equipe técnica alocada?",
       answer:
-        "Sim! Desenvolvemos sistemas preparados para escalar com o crescimento do seu negócio. Além disso, oferecemos suporte contínuo e pacotes específicos para manutenção e adição de novas funcionalidades conforme sua empresa evoluir.",
+        "Montamos uma equipe personalizada para seu projeto, que pode incluir desenvolvedores, testadores e um gerente técnico. Todos trabalham integrados às suas ferramentas e processos, com acompanhamento semanal das entregas.",
     },
     {
       id: "faq-4",
-      question: "Como vocês garantem a qualidade do projeto?",
+      question: "Preciso ter um escopo fechado para começar?",
       answer:
-        "Somos uma equipe de estudantes apaixonados por tecnologia, sempre atualizados com as tendências e boas práticas do mercado. Buscamos constantemente aprender e aplicar o que há de mais moderno, o que nos permite entregar soluções de qualidade, atuais e alinhadas com as necessidades reais dos nossos clientes.",
+        "Não! Esse é um dos principais benefícios do modelo sob demanda. Criamos um backlog inicial com você e trabalhamos nas prioridades do momento. Você tem total liberdade para mudar o foco conforme as necessidades do negócio evoluem.",
+    },
+    {
+      id: "faq-5",
+      question: "Como é feito o acompanhamento do trabalho?",
+      answer:
+        "Um gerente técnico organiza as entregas semanais, propõe melhorias e garante alinhamento com seus objetivos. Você tem visibilidade completa do que está sendo desenvolvido e participa ativamente das decisões de priorização.",
     },
   ],
 }

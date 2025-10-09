@@ -234,13 +234,13 @@ export function ContactForm({
 
         <div className="space-y-2 md:col-span-2">
           <Label htmlFor="message" className={labelColor}>
-            Conte-nos sobre sua ideia
+            Conte-nos sobre seu produto
           </Label>
           <Textarea
             id="message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            placeholder="Descreva seu projeto, objetivos, funcionalidades desejadas e qualquer outra informação relevante para entendermos melhor sua necessidade."
+            placeholder="Descreva seu produto digital atual, principais desafios, o que precisa ser desenvolvido ou melhorado, e quantas horas mensais você estima precisar."
             className={`min-h-[150px] ${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
             error={errors.message}
           />
