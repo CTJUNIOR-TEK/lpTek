@@ -16,7 +16,7 @@ export function WhyProductSection() {
           badgeColor="primary"
           title={
             <>
-              Por que ter um ChatBot no <span className="text-primary">WhatsApp</span>
+              Por que ter um Agente de IA no <span className="text-primary">WhatsApp</span>
             </>
           }
           description="Descubra como a automação no WhatsApp pode agilizar o atendimento, reduzir custos e aumentar as vendas da sua empresa."

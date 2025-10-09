@@ -28,14 +28,14 @@ export const benefits: BenefitData[] = [
   {
     title: "Fluxo de conversa otimizado",
     description:
-      "O bot conduz o cliente de forma natural até a compra, sem perder etapas do atendimento.",
+      "O agente conduz o cliente de forma natural até a compra, sem perder etapas do atendimento.",
     icon: <Repeat className="h-8 w-8" />,
     variant: "secondary",
   },
   {
     title: "Eficiência no atendimento",
     description:
-      "Aumente a produtividade da equipe ao deixar o bot cuidar das perguntas repetitivas.",
+      "Aumente a produtividade da equipe ao deixar o agente cuidar das perguntas repetitivas.",
     icon: <Gauge className="h-8 w-8" />,
     variant: "primary",
   },
@@ -56,14 +56,14 @@ export const benefits: BenefitData[] = [
   {
     title: "Sem complicação técnica",
     description:
-      "O chatbot funciona direto no WhatsApp, sem necessidade de instalação ou infraestrutura extra.",
+      "O agente de IA funciona direto no WhatsApp, sem necessidade de instalação ou infraestrutura extra.",
     icon: <Cloud className="h-8 w-8" />,
     variant: "secondary",
   },
   {
     title: "Escalável para crescer",
     description:
-      "O bot acompanha o crescimento da sua empresa, atendendo cada vez mais clientes ao mesmo tempo.",
+      "O agente acompanha o crescimento da sua empresa, atendendo cada vez mais clientes ao mesmo tempo.",
     icon: <Rocket className="h-8 w-8" />,
     variant: "primary",
   },

@@ -117,7 +117,7 @@ export function StepsSection() {
           badgeColor="primary"
           title={
             <>
-              Como implantamos seu <span className="text-primary">ChatBot</span> no WhatsApp
+              Como implantamos seu <span className="text-primary">Agente de IA</span> no WhatsApp
             </>
           }
           description="Nosso processo é simples, guiado e transparente: em poucas etapas, você terá um atendente virtual pronto para agilizar seu atendimento e aumentar suas vendas."

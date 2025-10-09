@@ -5,21 +5,21 @@ export const faqData = {
   items: [
     {
       id: "faq-1",
-      question: "O chatbot realmente consegue atender meus clientes sozinho ou ele só encaminha para um humano?",
+      question: "O agente de IA realmente consegue atender meus clientes sozinho ou ele só encaminha para um humano?",
       answer:
-        "O chatbot é capaz de resolver a maior parte das interações sozinho: responder dúvidas frequentes, informar preços, disponibilidade de produtos, mostrar catálogo e até coletar dados do cliente. Apenas quando o cliente demonstra intenção clara de compra ou pede algo mais complexo, ele é direcionado automaticamente para um atendente humano. Assim, você ganha escala sem perder o toque pessoal quando necessário.",
+        "O agente de IA é capaz de resolver a maior parte das interações sozinho: responder dúvidas frequentes, informar preços, disponibilidade de produtos, mostrar catálogo e até coletar dados do cliente. Apenas quando o cliente demonstra intenção clara de compra ou pede algo mais complexo, ele é direcionado automaticamente para um atendente humano. Assim, você ganha escala sem perder o toque pessoal quando necessário.",
     },
     {
       id: "faq-2",
-      question: "Quanto tempo demora para implantar o chatbot no meu WhatsApp?",
+      question: "Quanto tempo demora para implantar o agente de IA no meu WhatsApp?",
       answer:
-        "O prazo varia de acordo com a quantidade de informações que você deseja incluir. Em geral, após recebermos suas perguntas frequentes, catálogo e integrações desejadas (planilhas, Google Sheets ou Supabase), a implantação leva alguns dias. Nossa equipe faz a configuração guiada junto com você e entrega o bot pronto para uso rapidamente.",
+        "O prazo varia de acordo com a quantidade de informações que você deseja incluir. Em geral, após recebermos suas perguntas frequentes, catálogo e integrações desejadas (planilhas, Google Sheets ou Supabase), a implantação leva alguns dias. Nossa equipe faz a configuração guiada junto com você e entrega o agente pronto para uso rapidamente.",
     },
     {
       id: "faq-3",
-      question: "O chatbot pode ser adaptado ao meu segmento de negócio?",
+      question: "O agente de IA pode ser adaptado ao meu segmento de negócio?",
       answer:
-        "Sim! O chatbot é totalmente personalizável. Seja você dono de loja de roupas, clínica odontológica, escritório de serviços ou qualquer outro negócio, conseguimos treinar o bot com as perguntas e respostas que fazem sentido para o seu público. Isso garante que o atendimento seja relevante e útil para os seus clientes. ",
+        "Sim! O agente de IA é totalmente personalizável. Seja você dono de loja de roupas, clínica odontológica, escritório de serviços ou qualquer outro negócio, conseguimos treinar o agente com as perguntas e respostas que fazem sentido para o seu público. Isso garante que o atendimento seja relevante e útil para os seus clientes. ",
     },
     {
       id: "faq-4",
