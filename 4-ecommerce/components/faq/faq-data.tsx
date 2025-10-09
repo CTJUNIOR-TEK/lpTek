@@ -1,31 +1,37 @@
 export const faqData = {
-  heading: "Perguntas Frequentes", // ALTERAR TUDO
+  heading: "Perguntas Frequentes",
   description:
-    "Encontre respostas para as perguntas mais comuns sobre nosso serviço. Não encontrou o que procura? Entre em contato com nossa equipe pelo formulário ou por WhatsApp.",
+    "Tire suas dúvidas sobre a criação da sua loja virtual. Não encontrou o que procura? Entre em contato conosco.",
   items: [
     {
       id: "faq-1",
-      question: "Ainda não defini toda a estrutura e funcionalidades do meu sistema. Posso contratar mesmo assim?",
+      question: "Quanto tempo leva para criar um e-commerce?",
       answer:
-        "Com certeza! Nossa equipe fica responsável por entender sua necessidade e definir claramente todas as funcionalidades e detalhes técnicos do seu sistema. Você receberá um documento detalhado para aprovar antes de iniciarmos o desenvolvimento, garantindo que tudo esteja alinhado ao seu objetivo.",
+        "O prazo varia de acordo com a quantidade de produtos e personalizações. Em média, um e-commerce completo fica pronto em 3 a 6 semanas, incluindo configuração de pagamentos, frete, cadastro inicial de produtos e treinamento.",
     },
     {
       id: "faq-2",
-      question: "Vocês oferecem suporte técnico após o projeto entregue?",
+      question: "Vocês cuidam da integração com meios de pagamento?",
       answer:
-        "Sim! Oferecemos um período especial de suporte técnico de 6 meses após a entrega do sistema. Nesse tempo, nossa equipe fica disponível para resolver rapidamente possíveis bugs e problemas técnicos, garantindo o pleno funcionamento da solução desenvolvida. Além disso, entregamos toda a documentação detalhada do sistema e orientamos sua equipe sobre como utilizá-lo.",
+        "Sim! Integramos sua loja com as principais plataformas de pagamento (cartão, PIX, boleto). Você receberá os pagamentos automaticamente na sua conta, com toda a segurança necessária.",
     },
     {
       id: "faq-3",
-      question: "Meu sistema poderá evoluir depois de entregue?",
+      question: "Como funciona o cálculo de frete?",
       answer:
-        "Sim! Desenvolvemos sistemas preparados para escalar com o crescimento do seu negócio. Além disso, oferecemos suporte contínuo e pacotes específicos para manutenção e adição de novas funcionalidades conforme sua empresa evoluir.",
+        "Integramos sua loja com correios e transportadoras para cálculo automático de frete. O cliente digita o CEP e recebe na hora as opções de envio com prazos e valores.",
     },
     {
       id: "faq-4",
-      question: "Como vocês garantem a qualidade do projeto?",
+      question: "Consigo gerenciar a loja sozinho depois de pronta?",
       answer:
-        "Somos uma equipe de estudantes apaixonados por tecnologia, sempre atualizados com as tendências e boas práticas do mercado. Buscamos constantemente aprender e aplicar o que há de mais moderno, o que nos permite entregar soluções de qualidade, atuais e alinhadas com as necessidades reais dos nossos clientes.",
+        "Sim! Fornecemos treinamento completo e manual de uso. Você conseguirá adicionar produtos, alterar preços, controlar estoque e gerenciar pedidos de forma simples, sem precisar de conhecimento técnico.",
+    },
+    {
+      id: "faq-5",
+      question: "Vocês oferecem suporte após o lançamento?",
+      answer:
+        "Sim! Oferecemos suporte técnico de 6 meses após o lançamento da loja para resolver bugs e dúvidas sobre o uso da plataforma. Garantimos que sua loja funcione perfeitamente.",
     },
   ],
 }

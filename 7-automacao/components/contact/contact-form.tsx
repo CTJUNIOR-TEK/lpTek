@@ -84,7 +84,7 @@ export function ContactForm({
 
   const budgetOptions = [
     { value: "", label: "Selecione uma opção" },
-    { value: "2000+500", label: "R$2.000 + R$500 mensal" },
+    { value: "1500+500", label: "R$1.500 + R$500 mensal" },
     
   ]
 
@@ -127,7 +127,7 @@ export function ContactForm({
         source: formData.source,
         budget: formData.budget,
         message: formData.message,
-        type: "Sistema Web" // ALTERAR
+        type: "Automação" 
       }
 
       await sendEmail(templateParams)
@@ -238,7 +238,7 @@ export function ContactForm({
             id="message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            placeholder="Descreva sua empresa e o que espera do chatbot: quais produtos/serviços oferece, como é o atendimento atual e quais tarefas você gostaria de automatizar (estoque, preços, catálogo, agendamento etc.)."
+            placeholder="Descreva sua empresa e o que espera do agente de IA: quais produtos/serviços oferece, como é o atendimento atual e quais tarefas você gostaria de automatizar (estoque, preços, catálogo, agendamento etc.)."
             className={`min-h-[150px] ${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
             error={errors.message}
           />

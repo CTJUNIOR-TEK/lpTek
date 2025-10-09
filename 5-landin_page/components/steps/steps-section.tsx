@@ -113,14 +113,14 @@ export function StepsSection() {
     <section ref={sectionRef} id="etapas" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <SectionHeader
-          badge="Nossas Etapas"
+          badge="Do conceito ao lançamento"
           badgeColor="primary"
           title={
             <>
-              Como transformamos sua <span className="text-primary">ideia</span> em realidade
+              Como criamos sua <span className="text-primary">Landing Page</span>
             </>
           }
-          description="Nosso processo de desenvolvimento é estruturado em etapas claras para garantir qualidade e transparência."
+          description="Processo estratégico para criar uma página focada em conversão: da definição da oferta até a publicação e testes."
         />
 
         <div className="max-w-7xl mx-auto mt-12">

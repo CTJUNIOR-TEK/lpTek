@@ -1,11 +1,11 @@
 import {
-  Layers,
-  Repeat,
-  Gauge,
-  LockKeyhole,
-  Cloud,
-  Wrench,
-  Rocket,
+  Target,
+  Zap,
+  MousePointerClick,
+  TrendingUp,
+  Megaphone,
+  FormInput,
+  Sparkles,
   BarChart3,
 } from "lucide-react"
 import type { ReactNode } from "react"
@@ -19,58 +19,58 @@ export interface BenefitData {
 
 export const benefits: BenefitData[] = [
   {
-    title: "Centralização de atividades",
+    title: "Foco em conversão",
     description:
-      "Consolide processos, dados e equipes em um único lugar para facilitar a gestão do negócio.",
-    icon: <Layers className="h-8 w-8" />,
+      "Página única estratégica com elementos persuasivos: título atrativo, CTAs destacados e benefícios claros.",
+    icon: <Target className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Fluxo de trabalho otimizado",
+    title: "Resultados rápidos",
     description:
-      "Padronize etapas e ganhe fluidez operacional com um sistema pensado no seu processo.",
-    icon: <Repeat className="h-8 w-8" />,
+      "Ideal para campanhas que precisam gerar leads, vendas ou inscrições em curto prazo.",
+    icon: <Zap className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Eficiência operacional",
+    title: "Alta taxa de conversão",
     description:
-      "Aumente produtividade e reduza gargalos através de rotinas configuradas sob medida.",
-    icon: <Gauge className="h-8 w-8" />,
+      "Design pensado para guiar o visitante até a ação desejada, sem distrações.",
+    icon: <MousePointerClick className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Acesso seguro por níveis",
+    title: "Otimizada para campanhas",
     description:
-      "Controle permissões para cada usuário, mantendo dados protegidos e auditáveis.",
-    icon: <LockKeyhole className="h-8 w-8" />,
+      "Perfeita para tráfego pago, e-mail marketing e campanhas nas redes sociais.",
+    icon: <Megaphone className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Manutenção simplificada",
+    title: "Captação de leads",
     description:
-      "Atualizações e ajustes rápidos, sem interromper o funcionamento do sistema.",
-    icon: <Wrench className="h-8 w-8" />,
+      "Formulários estratégicos integrados para coletar contatos qualificados automaticamente.",
+    icon: <FormInput className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Sem instalação local",
+    title: "Design persuasivo",
     description:
-      "Use via navegador em qualquer dispositivo; atualizações acontecem direto no servidor.",
-    icon: <Cloud className="h-8 w-8" />,
+      "Layout responsivo com elementos visuais e textos que convencem e engajam seu público.",
+    icon: <Sparkles className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Escalabilidade garantida",
+    title: "ROI maximizado",
     description:
-      "O sistema cresce junto com sua empresa, pronto para novos módulos e usuários.",
-    icon: <Rocket className="h-8 w-8" />,
+      "Amplie o retorno dos seus investimentos em marketing digital com páginas que convertem.",
+    icon: <TrendingUp className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Insights em tempo real",
+    title: "Métricas claras",
     description:
-      "Dashboards ajudam a tomar decisões rápidas e baseadas em dados confiáveis.",
+      "Acompanhe conversões, origem do tráfego e performance para otimizar suas campanhas.",
     icon: <BarChart3 className="h-8 w-8" />,
     variant: "secondary",
   },

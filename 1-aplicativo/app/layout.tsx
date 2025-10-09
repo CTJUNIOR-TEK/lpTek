@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CT Junior | Sistema Web",
+  title: "CT Junior | Aplicativos",
   description: "Empresa júnior especializada em desenvolvimento de software sob demanda",
   icons: {
     icon: '/favicon.png',

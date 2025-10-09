@@ -48,28 +48,28 @@ export function WhyChooseUsSection() {
               Por que escolher a CT <span className="text-primary">Junior</span>?
             </>
           }
-          description="Entenda o que nos diferencia e como podemos agregar valor ao seu projeto"
+          description="Entenda por que somos a escolha ideal para evoluir seu produto digital com autonomia e agilidade"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
           <FeatureCard
             icon={<UserCheckIcon />}
-            title="Personalização"
-            description="Somente iniciamos a execução dos projetos depois da aprovação de nossos protótipos/mockups, modificando o que cliente desejar enquanto não é aprovada. Nosso papel é entregar exatamente o que você busca."
+            title="Time integrado"
+            description="Nossa equipe trabalha integrada às suas ferramentas e processos. Desenvolvedores, testadores e gerente técnico dedicados ao seu sucesso."
             delay={0}
             color="text-primary"
           />
           <FeatureCard
             icon={<DollarIcon />}
-            title="Custo-benefício"
-            description="Nossas soluções são até 30% mais baratas do que o mercado geral de engenharia de software. Quanto maior o projeto, maior o custo benefício e satisfação final."
+            title="Economia real"
+            description="Até 30% mais econômico que equipes fixas. Sem custos trabalhistas, sem desperdício de horas. Pague apenas pelo que usar."
             delay={1}
             color="text-secondary"
           />
           <FeatureCard
             icon={<CpuIcon />}
-            title="Inovação Tecnológica"
-            description="Utilizamos as tecnologias mais recentes e melhores práticas do mercado para desenvolver soluções modernas, escaláveis e preparadas para o futuro."
+            title="Máxima flexibilidade"
+            description="Mude prioridades quando quiser. Cancele sem multas. Banco de horas para não desperdiçar nada. Total controle sobre seu investimento."
             delay={2}
             color="text-primary"
           />

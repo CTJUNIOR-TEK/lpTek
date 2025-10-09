@@ -29,11 +29,11 @@ export function MoreInfos() {
         Pronto para acelerar seu WhatsApp?
       </h3>
       <p className="mb-8 max-w-3xl text-gray-300 dark:text-muted-foreground lg:text-lg">
-        Coloque um pré-atendente digital no seu negócio. Entre em contato e descubra como o chatbot pode responder clientes automaticamente e aumentar suas vendas.
+        Coloque um pré-atendente digital no seu negócio. Entre em contato e descubra como o agente de IA pode responder clientes automaticamente e aumentar suas vendas.
       </p>
       <div className="flex w-full flex-col gap-2 sm:flex-row sm:justify-center">
         <Button className="w-full bg-primary text-white hover:bg-primary/90 sm:w-auto" href="#contato">
-          Contratar o Bot agora
+          Contratar o Agente agora
         </Button>
       </div>
     </div>

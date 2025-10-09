@@ -11,7 +11,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
     id: "definition",
     title: "Definição de Objetivos e Escopo",
     description:
-      "Levantamos suas necessidades: quais dúvidas o bot deve responder, quais informações são essenciais (preço, estoque, catálogo etc.).",
+      "Levantamos suas necessidades: quais dúvidas o agente deve responder, quais informações são essenciais (preço, estoque, catálogo etc.).",
     iconName: "Lightbulb",
     variant: "primary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-60" />,
@@ -19,7 +19,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "data-collection",
     title: "Coleta de Informações",
-    description: "Reunimos FAQs, catálogo de produtos/serviços e detalhes sobre sua operação para treinar o chatbot.",
+    description: "Reunimos FAQs, catálogo de produtos/serviços e detalhes sobre sua operação para treinar o agente de IA.",
     iconName: "FileSearch",
     variant: "secondary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-60" />,
@@ -35,7 +35,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "data-modeling",
     title: "Modelagem de Dados",
-    description: "Conectamos o bot a planilhas, Google Sheets ou Supabase para registrar contatos e dados de atendimento.",
+    description: "Conectamos o agente a planilhas, Google Sheets ou Supabase para registrar contatos e dados de atendimento.",
     iconName: "Database",
     variant: "secondary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-60" />,
@@ -59,7 +59,7 @@ export const stepsData: Omit<StepCardProps, "stepNumber" | "className" | "isActi
   {
     id: "launch-training",
     title: "Publicação e Treinamento",
-    description: "Colocamos o bot em produção no seu WhatsApp e treinamos sua equipe para acompanhar e aproveitar todos os recursos.",
+    description: "Colocamos o agente em produção no seu WhatsApp e treinamos sua equipe para acompanhar e aproveitar todos os recursos.",
     iconName: "Rocket",
     variant: "primary",
     background: <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-60" />,

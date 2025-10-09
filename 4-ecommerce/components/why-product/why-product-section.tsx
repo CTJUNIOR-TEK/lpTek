@@ -12,14 +12,14 @@ export function WhyProductSection() {
     <section id="servicos" className="w-full py-12 pt-24 bg-background">
       <div className="container px-4 md:px-6">
         <SectionHeader
-          badge="Por que ter um sistema"
+          badge="Venda mais pela internet"
           badgeColor="primary"
           title={
             <>
-              Transforme seu negócio com <span className="text-primary">soluções digitais</span>
+              Por que ter um <span className="text-primary">E-commerce</span>
             </>
           }
-          description="Descubra como um sistema web personalizado pode otimizar tarefas, reduzir custos e impulsionar o crescimento da sua empresa."
+          description="Venda produtos e serviços 24 horas por dia, alcance novos públicos sem estrutura física e tenha controle total sobre pedidos, estoque e desempenho de vendas."
         />
 
         <div className="max-w-7xl mx-auto mt-12">

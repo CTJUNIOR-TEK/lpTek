@@ -20,7 +20,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero
-          title= { <>ChatBot <span className="text-primary">Sob Medida</span></> } // ALTERAR
+          title= { <>Triplique seus<br /><span className="text-primary">Leads Qualificados</span><br />com Agentes de IA</> } // ALTERAR
           subtitle="Automatize seu atendimento no WhatsApp, reduza respostas manuais e transforme conversas em vendas 24 horas por dia." // ALTERAR
           ctaText="Veja Como Funciona" 
           ctaHref="#etapas"

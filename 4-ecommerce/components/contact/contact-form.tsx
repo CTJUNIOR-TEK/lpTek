@@ -129,7 +129,7 @@ export function ContactForm({
         source: formData.source,
         budget: formData.budget,
         message: formData.message,
-        type: "Sistema Web" // ALTERAR
+        type: "E-commerce" // ALTERAR
       }
 
       await sendEmail(templateParams)
@@ -234,13 +234,13 @@ export function ContactForm({
 
         <div className="space-y-2 md:col-span-2">
           <Label htmlFor="message" className={labelColor}>
-            Conte-nos sobre sua ideia
+            Conte-nos sobre sua loja
           </Label>
           <Textarea
             id="message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            placeholder="Descreva seu projeto, objetivos, funcionalidades desejadas e qualquer outra informação relevante para entendermos melhor sua necessidade."
+            placeholder="Descreva que tipo de produtos você vende, quantos produtos pretende cadastrar inicialmente, se já tem identidade visual pronta e qualquer outra informação relevante sobre sua loja."
             className={`min-h-[150px] ${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
             error={errors.message}
           />

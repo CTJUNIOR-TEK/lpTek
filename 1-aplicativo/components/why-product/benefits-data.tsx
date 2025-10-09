@@ -1,12 +1,12 @@
 import {
-  Layers,
-  Repeat,
-  Gauge,
-  LockKeyhole,
-  Cloud,
-  Wrench,
-  Rocket,
-  BarChart3,
+  Smartphone,
+  Zap,
+  Heart,
+  Store,
+  Users,
+  Palette,
+  TrendingUp,
+  Bell,
 } from "lucide-react"
 import type { ReactNode } from "react"
 
@@ -19,59 +19,59 @@ export interface BenefitData {
 
 export const benefits: BenefitData[] = [
   {
-    title: "Centralização de atividades",
+    title: "Acesso facilitado",
     description:
-      "Consolide processos, dados e equipes em um único lugar para facilitar a gestão do negócio.",
-    icon: <Layers className="h-8 w-8" />,
+      "Seus clientes acessam o app direto do bolso, sem precisar de navegador ou login complicado.",
+    icon: <Smartphone className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Fluxo de trabalho otimizado",
+    title: "Experiência memorável",
     description:
-      "Padronize etapas e ganhe fluidez operacional com um sistema pensado no seu processo.",
-    icon: <Repeat className="h-8 w-8" />,
+      "Interfaces intuitivas e fluidas que cativam seu cliente a cada toque, criando conexões genuínas.",
+    icon: <Heart className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Eficiência operacional",
+    title: "Performance otimizada",
     description:
-      "Aumente produtividade e reduza gargalos através de rotinas configuradas sob medida.",
-    icon: <Gauge className="h-8 w-8" />,
+      "Apps rápidos e responsivos que funcionam perfeitamente mesmo em conexões instáveis.",
+    icon: <Zap className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Acesso seguro por níveis",
+    title: "Publicação nas lojas",
     description:
-      "Controle permissões para cada usuário, mantendo dados protegidos e auditáveis.",
-    icon: <LockKeyhole className="h-8 w-8" />,
+      "Cuidamos da publicação do seu app na App Store e Play Store, deixando tudo pronto para seus usuários.",
+    icon: <Store className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Manutenção simplificada",
+    title: "Design personalizado",
     description:
-      "Atualizações e ajustes rápidos, sem interromper o funcionamento do sistema.",
-    icon: <Wrench className="h-8 w-8" />,
+      "Seu app com a identidade da sua marca, não soluções prontas que não refletem sua visão.",
+    icon: <Palette className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Sem instalação local",
+    title: "Engajamento real",
     description:
-      "Use via navegador em qualquer dispositivo; atualizações acontecem direto no servidor.",
-    icon: <Cloud className="h-8 w-8" />,
+      "Notificações push e recursos nativos mantêm seu público conectado e engajado.",
+    icon: <Bell className="h-8 w-8" />,
     variant: "secondary",
   },
   {
-    title: "Escalabilidade garantida",
+    title: "Escalável para crescer",
     description:
-      "O sistema cresce junto com sua empresa, pronto para novos módulos e usuários.",
-    icon: <Rocket className="h-8 w-8" />,
+      "Desenvolvido para acompanhar seu crescimento, pronto para novos recursos e mais usuários.",
+    icon: <TrendingUp className="h-8 w-8" />,
     variant: "primary",
   },
   {
-    title: "Insights em tempo real",
+    title: "Comunidade conectada",
     description:
-      "Dashboards ajudam a tomar decisões rápidas e baseadas em dados confiáveis.",
-    icon: <BarChart3 className="h-8 w-8" />,
+      "Crie uma base de usuários fiéis que interagem com sua marca todos os dias.",
+    icon: <Users className="h-8 w-8" />,
     variant: "secondary",
   },
 ]
