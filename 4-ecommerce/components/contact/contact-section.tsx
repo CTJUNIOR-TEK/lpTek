@@ -10,10 +10,10 @@ export function ContactSection() {
             badge="Contato"
             title={
               <>
-                Vamos conversar sobre seu <span className="text-primary">projeto</span>?
+                Pronto para abrir sua <span className="text-primary">Loja Virtual</span>?
               </>
             }
-            description="Preencha o formulário abaixo ou envie-nos uma mensagem por WhatsApp e nosso time entrará em contato o mais rápido possível."
+            description="Preencha o formulário e nossa equipe entrará em contato para criar um e-commerce perfeito para o seu negócio."
             badgeColor="primary"
           />
         </div>

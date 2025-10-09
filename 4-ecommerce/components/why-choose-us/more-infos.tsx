@@ -26,16 +26,16 @@ export function MoreInfos() {
 
       {/* ---------- Texto & CTA ---------- */}
       <h3 className="mb-2 max-w-3xl font-semibold text-white lg:text-lg">
-        Precisa de mais informações?
+        Pronto para vender 24 horas por dia?
       </h3>
       <p className="mb-8 max-w-3xl text-gray-300 dark:text-muted-foreground lg:text-lg">
-        Nossa equipe está pronta para ajudar com qualquer dúvida ou necessidade
-        específica do seu projeto. Entre em contato pelo formulário ou pelo
-        WhatsApp para uma consultoria personalizada.
+        Entre em contato e descubra como podemos criar uma loja virtual
+        completa e personalizada para o seu negócio. Da configuração ao
+        treinamento, cuidamos de tudo.
       </p>
       <div className="flex w-full flex-col gap-2 sm:flex-row sm:justify-center">
         <Button className="w-full bg-primary text-white hover:bg-primary/90 sm:w-auto" href="#contato">
-          Fale Conosco!
+          Criar minha Loja
         </Button>
       </div>
     </div>

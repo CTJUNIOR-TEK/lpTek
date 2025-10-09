@@ -48,28 +48,28 @@ export function WhyChooseUsSection() {
               Por que escolher a CT <span className="text-primary">Junior</span>?
             </>
           }
-          description="Entenda o que nos diferencia e como podemos agregar valor ao seu projeto"
+          description="Entenda por que somos a melhor escolha para criar sua loja virtual e impulsionar suas vendas online"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
           <FeatureCard
             icon={<UserCheckIcon />}
-            title="Personalização"
-            description="Somente iniciamos a execução dos projetos depois da aprovação de nossos protótipos/mockups, modificando o que cliente desejar enquanto não é aprovada. Nosso papel é entregar exatamente o que você busca."
+            title="Loja do seu jeito"
+            description="Layout personalizado com a identidade da sua marca. Criamos protótipos e só iniciamos após sua aprovação total."
             delay={0}
             color="text-primary"
           />
           <FeatureCard
             icon={<DollarIcon />}
-            title="Custo-benefício"
-            description="Nossas soluções são até 30% mais baratas do que o mercado geral de engenharia de software. Quanto maior o projeto, maior o custo benefício e satisfação final."
+            title="Preço justo"
+            description="E-commerce profissional até 30% mais econômico que o mercado. Investimento acessível para começar a vender online."
             delay={1}
             color="text-secondary"
           />
           <FeatureCard
             icon={<CpuIcon />}
-            title="Inovação Tecnológica"
-            description="Utilizamos as tecnologias mais recentes e melhores práticas do mercado para desenvolver soluções modernas, escaláveis e preparadas para o futuro."
+            title="Tudo integrado"
+            description="Pagamentos, frete, estoque e pedidos funcionando perfeitamente. Plataforma completa e pronta para vender desde o dia 1."
             delay={2}
             color="text-primary"
           />
