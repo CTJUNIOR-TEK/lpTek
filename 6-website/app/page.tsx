@@ -20,8 +20,8 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero
-          title= { <>Sistemas Web <span className="text-primary">Sob Medida</span></> } // ALTERAR
-          subtitle="Transforme tarefas manuais em fluxos digitais, unifique suas operações e acelere o crescimento do seu negócio." // ALTERAR
+          title= { <>Construa sua<br /><span className="text-primary">Presença Digital</span></> } // ALTERAR
+          subtitle="Website institucional personalizado que fortalece sua marca, gera autoridade digital e aumenta a confiança do seu público online." // ALTERAR
           ctaText="Veja Como Funciona" 
           ctaHref="#etapas"
           secondaryCtaText="Conheça a CT Junior"
