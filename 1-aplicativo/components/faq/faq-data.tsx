@@ -1,31 +1,37 @@
 export const faqData = {
-  heading: "Perguntas Frequentes", // ALTERAR TUDO
+  heading: "Perguntas Frequentes",
   description:
-    "Encontre respostas para as perguntas mais comuns sobre nosso serviço. Não encontrou o que procura? Entre em contato com nossa equipe pelo formulário ou por WhatsApp.",
+    "Tire suas dúvidas sobre o desenvolvimento do seu aplicativo. Não encontrou a resposta? Entre em contato com nossa equipe pelo formulário ou por WhatsApp.",
   items: [
     {
       id: "faq-1",
-      question: "Ainda não defini toda a estrutura e funcionalidades do meu sistema. Posso contratar mesmo assim?",
+      question: "Tenho apenas uma ideia, mas não sei como funciona tecnicamente. Vocês podem me ajudar?",
       answer:
-        "Com certeza! Nossa equipe fica responsável por entender sua necessidade e definir claramente todas as funcionalidades e detalhes técnicos do seu sistema. Você receberá um documento detalhado para aprovar antes de iniciarmos o desenvolvimento, garantindo que tudo esteja alinhado ao seu objetivo.",
+        "Absolutamente! Nossos estrategistas digitais mergulham no seu mundo para entender sua visão e transformá-la em um projeto técnico completo. Criamos toda a concepção, protótipos e validamos cada detalhe com você antes de começar o desenvolvimento.",
     },
     {
       id: "faq-2",
-      question: "Vocês oferecem suporte técnico após o projeto entregue?",
+      question: "Vocês publicam o app nas lojas (App Store e Play Store)?",
       answer:
-        "Sim! Oferecemos um período especial de suporte técnico de 6 meses após a entrega do sistema. Nesse tempo, nossa equipe fica disponível para resolver rapidamente possíveis bugs e problemas técnicos, garantindo o pleno funcionamento da solução desenvolvida. Além disso, entregamos toda a documentação detalhada do sistema e orientamos sua equipe sobre como utilizá-lo.",
+        "Sim! Cuidamos de todo o processo de publicação nas principais lojas digitais. Seu app estará disponível para download na App Store e Play Store, pronto para conquistar usuários em qualquer lugar.",
     },
     {
       id: "faq-3",
-      question: "Meu sistema poderá evoluir depois de entregue?",
+      question: "Quanto tempo leva para desenvolver um aplicativo?",
       answer:
-        "Sim! Desenvolvemos sistemas preparados para escalar com o crescimento do seu negócio. Além disso, oferecemos suporte contínuo e pacotes específicos para manutenção e adição de novas funcionalidades conforme sua empresa evoluir.",
+        "O prazo varia de acordo com a complexidade do projeto. Apps mais simples podem levar de 2 a 3 meses, enquanto projetos mais robustos podem levar de 4 a 6 meses. Após entendermos sua necessidade, apresentamos um cronograma detalhado.",
     },
     {
       id: "faq-4",
-      question: "Como vocês garantem a qualidade do projeto?",
+      question: "O app vai funcionar tanto em iPhone quanto em Android?",
       answer:
-        "Somos uma equipe de estudantes apaixonados por tecnologia, sempre atualizados com as tendências e boas práticas do mercado. Buscamos constantemente aprender e aplicar o que há de mais moderno, o que nos permite entregar soluções de qualidade, atuais e alinhadas com as necessidades reais dos nossos clientes.",
+        "Sim! Desenvolvemos aplicativos que funcionam perfeitamente em ambas as plataformas (iOS e Android), garantindo que você alcance o maior público possível sem perder qualidade de experiência.",
+    },
+    {
+      id: "faq-5",
+      question: "Depois de pronto, posso adicionar novas funcionalidades ao app?",
+      answer:
+        "Com certeza! Desenvolvemos apps escaláveis, preparados para crescer junto com seu negócio. Oferecemos suporte contínuo e pacotes de evolução para adicionar novos recursos conforme suas necessidades.",
     },
   ],
 }

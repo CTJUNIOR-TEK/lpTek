@@ -240,7 +240,7 @@ export function ContactForm({
             id="message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            placeholder="Descreva seu projeto, objetivos, funcionalidades desejadas e qualquer outra informação relevante para entendermos melhor sua necessidade."
+            placeholder="Descreva sua ideia de aplicativo: qual problema ele resolve, quem são seus usuários, principais funcionalidades desejadas e qualquer inspiração ou referência que você tenha em mente."
             className={`min-h-[150px] ${inputTextColor} ${inputBgColor} ${inputBorderColor} focus-visible:ring-${inputFocusRingColor}`}
             error={errors.message}
           />

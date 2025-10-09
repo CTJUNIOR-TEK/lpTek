@@ -48,28 +48,28 @@ export function WhyChooseUsSection() {
               Por que escolher a CT <span className="text-primary">Junior</span>?
             </>
           }
-          description="Entenda o que nos diferencia e como podemos agregar valor ao seu projeto"
+          description="Somos especialistas no design e desenvolvimento de apps, oferecendo soluções digitais personalizadas que alavancam os resultados do seu negócio"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
           <FeatureCard
             icon={<UserCheckIcon />}
-            title="Personalização"
-            description="Somente iniciamos a execução dos projetos depois da aprovação de nossos protótipos/mockups, modificando o que cliente desejar enquanto não é aprovada. Nosso papel é entregar exatamente o que você busca."
+            title="Seu app, sua identidade"
+            description="Apps desenhados sob medida para sua visão de mercado. Não soluções prontas, mas experiências únicas que criam conexões genuínas com seu público-alvo."
             delay={0}
             color="text-primary"
           />
           <FeatureCard
             icon={<DollarIcon />}
-            title="Custo-benefício"
-            description="Nossas soluções são até 30% mais baratas do que o mercado geral de engenharia de software. Quanto maior o projeto, maior o custo benefício e satisfação final."
+            title="Investimento acessível"
+            description="Desenvolvimento de aplicativos com até 30% mais economia que o mercado. Qualidade profissional sem comprometer seu orçamento."
             delay={1}
             color="text-secondary"
           />
           <FeatureCard
             icon={<CpuIcon />}
-            title="Inovação Tecnológica"
-            description="Utilizamos as tecnologias mais recentes e melhores práticas do mercado para desenvolver soluções modernas, escaláveis e preparadas para o futuro."
+            title="Tecnologias atuais"
+            description="React Native, Node.js e as melhores práticas do mercado. Apps rápidos, escaláveis e preparados para evoluir junto com seu negócio."
             delay={2}
             color="text-primary"
           />
