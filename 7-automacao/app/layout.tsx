@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "@/styles/global.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -21,20 +22,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              (function(w,d,s,l,i){w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-NX5HM6NZ');
-            `,
-          }}
-        />
-      </head>
+      <Script id="gtm-dataLayer">
+        {`window.dataLayer = window.dataLayer || [];`}
+      </Script>
+      <Script
+        id="gtm-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NX5HM6NZ');
+          `,
+        }}
+      />
       <body className={inter.className}>
         <noscript>
           <iframe
