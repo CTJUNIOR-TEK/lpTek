@@ -27,6 +27,26 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.google-analytics.com https://*.google.com https://*.googleadservices.com https://*.doubleclick.net https://*.googlesyndication.com",
+              "style-src 'self' 'unsafe-inline'",
+              "img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com https://*.google.com https://*.doubleclick.net",
+              "connect-src 'self' https://*.google-analytics.com https://*.googletagmanager.com https://*.google.com https://*.doubleclick.net",
+              "frame-src 'self' https://*.googletagmanager.com",
+            ].join('; '),
+          },
+        ],
+      },
+    ]
+  },
 }
 
 if (userConfig) {
