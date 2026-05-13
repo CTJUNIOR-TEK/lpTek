@@ -57,7 +57,16 @@ export function WhatsAppCTA() {
               <Button
                 size="lg"
                 className="relative bg-white dark:bg-black hover:bg-white/90 dark:hover:bg-black/90 text-primary dark:text-primary border border-primary/20 px-8 py-6 h-auto text-lg rounded-full group shadow-lg"
-                onClick={() => window.open(whatsappUrl, "_blank")}
+                onClick={() => {
+                  if (typeof window !== "undefined" && (window as any).dataLayer) {
+                    ;(window as any).dataLayer.push({
+                      event: "whatsapp_click",
+                      whatsapp_number: "5527997767207",
+                      whatsapp_source: "cta_section",
+                    })
+                  }
+                  window.open(whatsappUrl, "_blank")
+                }}
               >
                 <span className="flex items-center gap-2">
                 <svg
