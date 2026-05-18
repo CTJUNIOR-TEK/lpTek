@@ -45,6 +45,9 @@ export function WhatsAppButton() {
         whatsapp_number: "5527997767207",
         whatsapp_source: "floating_button",
       })
+      console.log("[GTM Debug] whatsapp_click disparado - floating_button")
+    } else {
+      console.warn("[GTM Debug] dataLayer não disponível - floating_button")
     }
 
     window.open(
@@ -158,8 +161,15 @@ export function WhatsAppButton() {
 
           {/* Footer */}
           <div className="border-t p-3 bg-[#F0F2F5] dark:bg-zinc-900">
-            <Button onClick={openWhatsApp} className="w-full bg-secondary hover:bg-secondary/70 text-white">
-              Conversar no WhatsApp
+            <Button asChild className="w-full bg-secondary hover:bg-secondary/70 text-white">
+              <a
+                href="https://wa.me/5527997767207?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20sistema%20web%20da%20CT%20Junior."
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={openWhatsApp}
+              >
+                Conversar no WhatsApp
+              </a>
             </Button>
           </div>
         </div>
