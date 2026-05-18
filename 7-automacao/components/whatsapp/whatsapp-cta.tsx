@@ -70,9 +70,6 @@ export function WhatsAppCTA() {
                         whatsapp_number: "5527997767207",
                         whatsapp_source: "cta_section",
                       })
-                      console.log("[GTM Debug] whatsapp_click disparado - cta_section")
-                    } else {
-                      console.warn("[GTM Debug] dataLayer não disponível - cta_section")
                     }
                   }}
                 >
