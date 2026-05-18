@@ -38,8 +38,7 @@ export function WhatsAppButton() {
     }
   }
 
-  const openWhatsApp = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
+  const openWhatsApp = () => {
     if (typeof window !== "undefined" && (window as any).dataLayer) {
       ;(window as any).dataLayer.push({
         event: "whatsapp_click",
@@ -47,12 +46,6 @@ export function WhatsAppButton() {
         whatsapp_source: "floating_button",
       })
     }
-    setTimeout(() => {
-      window.open(
-        "https://wa.me/5527997767207?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20sistema%20web%20da%20CT%20Junior.",
-        "_blank",
-      )
-    }, 1500)
   }
 
   return (

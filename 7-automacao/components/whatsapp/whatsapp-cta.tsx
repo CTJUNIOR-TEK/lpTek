@@ -63,8 +63,7 @@ export function WhatsAppCTA() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={(e) => {
-                    e.preventDefault()
+                  onClick={() => {
                     if (typeof window !== "undefined" && (window as any).dataLayer) {
                       ;(window as any).dataLayer.push({
                         event: "whatsapp_click",
@@ -72,9 +71,6 @@ export function WhatsAppCTA() {
                         whatsapp_source: "cta_section",
                       })
                     }
-                    setTimeout(() => {
-                      window.open(whatsappUrl, "_blank")
-                    }, 1500)
                   }}
                 >
                   <span className="flex items-center gap-2">
